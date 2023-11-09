@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jelaskan Apa Yang Dimaksud Dengan Using Namespace Std - BELAJAR</title>
+    <meta name="description" content="Jelaskan Apa Yang Dimaksud Dengan Using Namespace Std, , , , , , , 0, , , , , , 0, jelaskan-apa-yang-dimaksud-dengan-using-namespace-std, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Jelaskan Apa Yang Dimaksud Dengan Using Namespace Std - BELAJAR" />
+    <meta property="og:description" content="Jelaskan Apa Yang Dimaksud Dengan Using Namespace Std, , , , , , , 0, , , , , , 0, jelaskan-apa-yang-dimaksud-dengan-using-namespace-std, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jelaskan Apa Yang Dimaksud Dengan Using Namespace Std - BELAJAR" />
+    <meta name="twitter:description" content="Jelaskan Apa Yang Dimaksud Dengan Using Namespace Std, , , , , , , 0, , , , , , 0, jelaskan-apa-yang-dimaksud-dengan-using-namespace-std, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://skripsipintar.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://skripsipintar.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://skripsipintar.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://skripsipintar.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://skripsipintar.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://skripsipintar.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://skripsipintar.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://skripsipintar.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://skripsipintar.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://skripsipintar.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Jelaskan Apa Yang Dimaksud Dengan Using Namespace Std</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">iyus679</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Jelaskan+Apa+Yang+Dimaksud+Dengan+Using+Namespace+Std" alt="Jelaskan Apa Yang Dimaksud Dengan Using Namespace Std">
+                    </div>
+                    <p></p>
+                    <p>fungsi dari using namespace std; untuk apa ya ?</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-dari-using-namespace-std-untuk-apa-ya">1.
+                                            fungsi dari using namespace std; untuk apa ya ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tolong-jelaskan-tentang-kode-program-c-using-namespace-std-int-char-long-if-else-dan-return-%e2%80%8b">2.
+                                            Tolong jelaskan tentang kode program c++, using namespace std, int, char, long, If, else dan return.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#include-using-namespace-stdint-maincouthello-world">3.
+                                            #include using namespace std;int main(){cout&lt;&lt;"HELLO WORLD";}</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perbaikilah-bentuk-command-di-bawah-ini-dan-berikan-hasil-output-dari-bahasa-program-tersebut-using-namespace-stdint-mainint-i1hasil0whilei5hasilhasiliicouthasil">4.
+                                            Perbaikilah bentuk command di bawah ini dan berikan hasil output dari bahasa program tersebut !using namespace stdint main(){int i=1;hasil=0while(i&lt;=5){hasil=hasil+i,i++:}cout&lt;&lt;"hasil = "&lt;&lt;hasil&lt;&lt;endl;}​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#include-iostreamusing-namespace-std-int-mainint-nilai-52491522court-ecout-cegetchlengkapi-script-array-diatas-untuk-mengahasilkan-nilai-2-dan-15-seperti-gambar-diatas">5.
+                                            #include &lt;iostream&gt;using namespace std ;int main){int nilai 5={24,9,1522),court &lt;ecout cegetch():Lengkapi script array diatas untuk mengahasilkan nilai 2 dan 15, seperti gambar diatas​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#include-iostream-using-namespace-std-int-main-string-nama5seninselasarabukamisjumatcoutnama1endlcoutnama4endl%e2%80%8b">6.
+                                            #include &lt;iostream&gt; using namespace std; int main() { string nama[5]={"Senin","Selasa","Rabu","Kamis","Jumat"};	cout&lt;&lt;nama[1]&lt;&lt;endl;	cout&lt;&lt;nama[4]&lt;&lt;endl;}​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pada-penggunaan-sleep-perlu-sebuah-pemanggilan-file-header-yaitu-a-include-b-using-namespace-std-c-prototipe-fungsi-d-deklarasi-kelas-e-int-main-void-%e2%80%8b">7.
+                                            Pada penggunaan sleep perlu sebuah pemanggilan file header yaitu .... a. #include b. using namespace std; c. // prototipe fungsi d. // deklarasi kelas () e. int main (void) {​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#include-include-using-namespace-std-int-main-vector-myvector-5-4-3-2-1-myvector-pop_back-for-auto-it-myvector-begin-it-myvector-end-it-cout-it">8.
+                                             #include #include using namespace std; int main() ( } vector myvector( 5, 4, 3, 2, 1); myvector.pop_back(); for (auto it - myvector.begin(); it != myvector.end(); ++it) cout &lt;&lt; "&lt;&lt;*it; ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-syntak-pada-visual-studio-2010-untuk-2-fungsi-using-namespace-std-adalah-3-library-untuk-memanggil-pada-visual-studio-2010-adalah">9.
+                                            1. Syntak "" pada visual studio 2010 untuk ?
+2. Fungsi "using namespace std;" adalah ?
+3. Library untuk memanggil "" pada visual studio 2010 adalah ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ppperhatikan-program-berikut-include-using-namespace-std-int-main-int-x-10-y-3-a-int-z-b-z-x-xy-c-cout-x-x-d-cout-endl-e-return-0-z-dari-progr">10.
+                                            PpPerhatikan program berikut #include using namespace std; int main() { int x = 10, y = 3; A int z; B z = x Xy; C cout &lt;&lt; X &lt;&lt; "X D cout &lt;&lt; endl; E return 0; &lt;&lt; Z; } Dari program diatas, manakah penulisannya yang tidak benar?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-deskripsikan-logic-program-di-bawah-ini-include-using-namespace-stdint-main-int-uangsaya-10000-int-pilihannya-cout-mau-makan-pas-keluar-beli-makanan-hanya-ada-lt">11.
+                                            1. Deskripsikan Logic Program di bawah Ini 
+#include 
+using namespace std;
+int main()
+{
+ int uangSaya = 10000;
+ int pilihannya;
+ cout &lt;&lt; "Mau Makan, Pas Keluar Beli Makanan Hanya ada : " &lt;&lt; endl;
+ cout &lt;&lt; "1. Pecel Lele" &lt;&lt; endl;
+ cout &lt;&lt; "2. Stick Kentang" &lt;&lt; endl;
+ cout &lt;&lt; "Dengan uang segitu Saya bisa beli : ";
+ if(uangSaya &lt;= 6000) {
+ cout &lt;&lt; "Tidak beli apa apa" &lt;&lt; endl;
+ }
+ else if(uangSaya &gt;= 7000 &amp;&amp; uangSaya &lt;= 14000){
+ cout &lt;&lt; "Pecel lele aja " &lt;&lt; endl;
+ }
+ else if(uangSaya &gt;= 15000 &amp;&amp; uangSaya &lt;= 22000){
+ cout &lt;&lt; "Pecel Lele ATAU Stick Kentang ?? " &lt;&lt; endl;
+ }
+ else{
+ cout &lt;&lt; "Pecel Lele DAN Stick Kentang" &lt;&lt; endl;
+ }
+}</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#includeiostreamusing-namespace-stdint-main-coutkataendlreturn-0-mohon-maaf-kak-program-di-atas-ternyata-error-kak-mohon-klarifikasi-di-mana-kesalahannya-ya-kak">12.
+                                            include&lt;iostream&gt;using namespace std;int main (){      cout&lt;&lt;kata&lt;&lt;endl;return 0 }mohon maaf kak program di atas ternyata error kak....mohon klarifikasi di mana kesalahannya ya kak ?terima kasih​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tes-coding-program-yang-terdapat-pada-tampilan-berikutinclude-include-using-namespace-stdmain-int-x-int-px-pointer-ke-variabel-int-ppx-pointer-ke-pointer-x-175-px-x">13.
+                                            Tes coding program yang terdapat pada tampilan berikut
+#include 
+#include 
+using namespace std;
+main() { 
+int x; 
+int *px; //pointer ke variabel 
+int **ppx; //pointer ke pointer 
+x = 175; 
+px = &amp;x; 
+ppx = &amp;px;
+cout &lt;&lt; "Nilai x = " &lt;&lt; x &lt;&lt; endl; 
+cout &lt;&lt; "Nilai px = " &lt;&lt; *px &lt;&lt; endl; 
+cout &lt;&lt; "Nilai ppx = " &lt;&lt; **ppx &lt;&lt; endl; 
+getch(); 
+}
+ Tugas
+1. Jelaskan maksud dari program di atas (di baca dari penulisan variabel) !
+2. Buatlah program pointer dengan menjelaskan maksud dari program tersebut !(coding dan hasil di capture)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#include-include-include-using-namespace-std-void-tunjukkan_antrian-int-main-queue-antrian_pesanan-antrian_pesanan-pushmario-antrian_pesanan-pushpaisal-antrian_pesanan-pus">14.
+                                            #include #include #include using namespace std; void tunjukkan_antrian(){ ..... } int main() { queue antrian_pesanan; antrian_pesanan.push("mario"); antrian_pesanan.push("paisal"); antrian_pesanan.push("fernanda"); tunjukkan_antrian(); return 0; } Lengkapi titik titik atau definisikan fungsi tunjukkan_antrian sehingga ketika dipanggil dapat menunjukkan antrian isi dari queue</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ada-yg-bisa-bantu-menjelaskan-kode-program-di-bawah-ini-include-using-namespace-std-int-main-int-ab-a40-ba-coutpointer-b-menunjukkan">15.
+                                            Ada yg bisa bantu menjelaskan kode program di bawah ini :( #include using namespace std; int main(){ int a,*b; a=40; b=&amp;a; cout&lt;&lt;"Pointer b Menunjukkan : " &lt;</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#include-using-namespace-stdint-maincout-%e2%80%9c1-%e2%80%9d-1-endlcout-%e2%80%9c0-%e2%80%9d-0-endlreturn-0program-diatas-s">16.
+                                            #include 
+using namespace std;
+int main(){
+cout &lt;&lt; “!1 = ” &lt;&lt; !1 &lt;&lt; endl;
+cout &lt;&lt; “!0 = ” &lt;&lt; !0 &lt;&lt; endl;
+return 0
+}
+Program diatas secara berturut-turut akan menghasilkan...</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#hasil-dari-kode-program-berikut-adalah-include-iostreamusing-namespace-std-int-main-int-x-157-y-%e2%81%b8-int-hasil-hasil-x-y-cout">17.
+                                            Hasil dari kode program berikut adalah... #include &lt;iostream&gt;using namespace std; int main() {           int x = 157, y = ⁸;          int hasil;          hasil = x &amp; y;          cout&lt;&lt;hasil;          return 0;} O 1 O 5 O 2 O 4 O 3 ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#include-iostream-using-namespace-std-int-main-cout-hello-world-return-0-manakah-yang-merupakan-representasi-dari-standar-output-a-include-iostreamb-using-nam">18.
+                                            #include &lt;iostream&gt; using namespace std; int main () {cout &lt;&lt; "Hello World!"; return 0; } Manakah yang merupakan representasi dari standar output ?a)  #include &lt;iostream&gt;b) using namespace std c) int main ()d) coute) return 0Please banget dibjawabbb yg tau </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#include-iostreamusing-namespace-stdmain-int-a-b-ca-7b-a-2-2c-a-bcoutc%e2%80%8b">19.
+                                            #include &lt;iostream&gt;using namespace std;main(){ int A, B, C;A = 7;B = (A / 2) * 2;C = A - B;cout&lt;&lt;C;}​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-include-iostreamusing-namespace-stdmain-int-a-5couta2endlcouta%e2%80%8b">20.
+                                            a. #include &lt;iostream&gt;using namespace std;main(){ int A = 5;cout&lt;&lt;A+2&lt;&lt;endl;cout&lt;&lt;A;​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cara-memperbaiki-program-di-imi-bagaimana-cara-memperbikiinclude-include-using-namespace-stdint-main-system-color-b6int-menucoutncout__________________">21.
+                                            cara memperbaiki program di imi. bagaimana cara memperbiki??
+#include 
+#include 
+using namespace std;
+int main ()
+{
+	system ("color b6");
+	int menu;
+	cout&lt;&lt;"\n";
+	cout&lt;&lt;"________________________________________________"&lt;&gt;menu;
+	switch (menu){
+		default:
+			system("color e6");
+			cout&lt;&lt;"\N";
+			cout&lt;&lt;" :+------------------------------------------------+"&lt;</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#algoritma-c-nested-for-includeiostreamusing-namespace-stdint-mainint-abc7for-for-cout-return-0tolong-isi-titiknya-dong-sesuai-gambaran">22.
+                                            algoritma C++ , nested for .#include&lt;iostream&gt;using namespace std;int main(){int a,b,c=7;for (........){for (........){cout&lt;&lt;....;}return 0;}tolong isi titik"nya dong sesuai gambaran​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-fungsi-dari-%e2%80%9cusing-name-space-std%e2%80%9d">23.
+                                            	Jelaskan fungsi dari “using name space std” !</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tolong-dijawab-ya-pertanyaan-seputar-c1-apa-maksud-dari-baris-include2-mengapa-fungsi-main-di-depannya-ada-int3-mengapa-fungsi-main-memiliki-pernyataan-return-04-apa-maksud-dari-angka-n">24.
+                                            Tolong dijawab ya pertanyaan seputar C++
+1.Apa maksud dari baris "include"?
+2.Mengapa fungsi main di depannya ada "int"?
+3.Mengapa fungsi main memiliki pernyataan "return 0"?
+4.Apa maksud dari angka nol tersebut?4.Untuk apa “using namespace std” itu? Mengapa di beberapa referensi tidak ada tetapi di perangkat pemrograman, saya harus menyertakan itu supaya program bisa berjalan?
+5.Apa perbedaan antara C dan C++? Mana yang lebih baik antara keduanya?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perhatikan-algoritma-berikut-include-using-namespace-std-int-main-int-x1-while-x10-cout-if-x5-break">25.
+                                            Perhatikan Algoritma berikut
+ #include
+  using namespace std;
+    Int main ()
+     {
+       int x=1;
+       While (x&lt;=10) {
+                    cout&lt;
+                     if (x==5) break;
+                      x++;
+                        }
+                 cout&lt;&lt;"nilai x berakhir ="&lt;
+                   return 0;
+                     }
+Kode program diatas menggunakan struktur peeulangan while-do.Terdapat pernyataan break yang memengaruhi hasil yang dimiliki.Dengan penggunaan Pernyataan ini maka kode program diatas menampilkan hasil?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-baris-kode-berikut-include-using-namespace-std-int-main-deklarasi-variable-int-time-22-if-time-10-cout-good-morning-else-if-time-20-cout">26.
+                                            Jelaskan baris kode berikut! #include using namespace std; int main() { // Deklarasi variable int time = 22; if (time &lt; 10) { cout &lt;&lt; "Good morning."; } else if (time &lt; 20) { cout &lt;&lt; "Good day."; } else { cout &lt;&lt; "Good evening."; } return 0; }​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#include-using-namespace-stdint-main-int-umur14-if-umur18-if-umur10-coutanak-anak-else-coutremaja-else-coutbukan-usia-a">27.
+                                            #include 
+using namespace std;
+int main()
+{
+ int umur=14;
+ if (umur&lt;=18)
+ {
+ if (umur&lt;=10){
+ cout&lt;&lt;"Anak-anak"&lt;
+ }else {
+ cout&lt;&lt;"Remaja"&lt;
+ }
+ }else {
+ cout&lt;&lt;"Bukan usia anak maupun remaja"&lt;
+ }
+}
+Program tersebut menghasilkan output?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#include-iostreamusing-namespace-stdmain-int-a-b-a-5-b-2a-bcouta-endlcoutb%e2%80%8b">28.
+                                            #include &lt;iostream&gt;using namespace std;main(){ int A, B; A = 5; B = 2;A = B;cout&lt;&lt;A &lt;&lt;endl;cout&lt;&lt;B;​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-fungsi%c2%b2-codingan-c-berikut-ini1-includeiostream2-includeconio-h3includestring4-using-namespace-std5-int-main6-string7-cout8-endl9-getch">29.
+                                            tuliskan fungsi² codingan c++ berikut ini:1. #include&lt;iostream&lt;2.#include&lt;conio.h&lt;3#include&lt;string&lt;4. using namespace std;5. int main()6. string7. cout&lt;&lt;8. endl;9. getch;​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#input-include-using-namespace-std-int-mainint-argc-char-const-argv-cout-software-sublime-text-3-compiler-mingw-64bits-windows-64bits-pertanyaannya-kenapa-bisa-begitu-ap">30.
+                                            Input : #include  using namespace std; int main(int argc, char const *argv[]){ cout  Software : Sublime Text 3 Compiler : MinGW-64bits &amp;&amp; Windows 64bits Pertanyaannya : Kenapa bisa begitu ? Apa yang harus di lakukan agar sublime text 3 tidak mengeluarkan pesan error yang seperti itu ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#include-iostreamusing-namespace-stdint-mainint-bulat-5-812269020nilai-variable-yag-diberikan-pada-indek-array-ke-3-adalah-%e2%80%8b">31.
+                                            # include &lt;iostream&gt;Using namespace std;int main(){int bulat [5] = {8,12,26,90,20};Nilai variable yag diberikan pada indek array ke 3 adalah..​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#lengkapi-struktur-programperulangan-dibawah-ini-includeconio-hinclude-iostream-husing-namespace-stdint-main-a-b-a1-a-5-aforb-a-b-5-bcou">32.
+                                            Lengkapi struktur programperulangan dibawah ini *#include&lt;conio.h&gt;#include &lt;iostream h&gt;using namespace std;int main......... a, b,........(a=1; a &lt;= 5; a++)for(b = a; b &lt;= 5; b++)cout &lt;a&lt;&lt;"";getch():return 0;​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#include-include-using-namespace-std-int-main-int-r-coutmasukan-bilangan-pertama-cinm-coutmasukan-bilangan-kedua-cinn-r-mn-do-cout">33.
+                                            #include #include using namespace std;  int main() {  int r; cout&lt;&lt;"Masukan bilangan pertama : "; cin&gt;&gt;m; cout&lt;&lt;"Masukan bilangan kedua : "; cin&gt;&gt;n;  r = m%n; do { 	cout&lt;&lt;"Bilangan pertama : "&lt;</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#include-using-namespace-stdint-main-int-i4-while-i10-cout-program-while-cout-i-endl-i-2-cout-finish-endlreturn-0">34.
+                                            #include 
+using namespace std;
+int main()
+{
+ int i=4;
+ while (i&lt;10){
+ cout &lt;&lt; "Program While" ;
+ cout &lt;&lt; i &lt;&lt; endl;
+ i += 2;
+ }
+ cout &lt;&lt; "Finish" &lt;&lt; endl;
+return (0);
+}
+Output dari program diatas adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#include-using-namespace-stdint-main-string-nama5dimasrinialdibayuputri-cout-coutperhatikan-program-diatas-hasil-output-dari-program-tersebut-adalah">35.
+                                            #include 
+using namespace std;
+int main() {
+ string nama[5]={"Dimas","Rini","Aldi","Bayu","Putri"};
+ cout&lt;
+ cout&lt;
+}
+Perhatikan program diatas, hasil output dari program tersebut adalah?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tentukan-output-dari-kode-program-array-satu-dimensi-dibawah-ini-include-using-namespace-std-int-nilai-8-9-2-1-2-4-6-int-i-hasil0-int-main-for-i0-i7-i-hasil">36.
+                                            Tentukan output dari kode program array satu dimensi dibawah ini .... #include using namespace std; int nilai[] = {8, 9, 2, 1, 2, 4, 6}; int i, hasil=0; int main (){ for ( i=0 ; i&lt;7 ; ++i ){ hasil+= nilai[i]; } cout &lt;&lt; hasil; return 0; }</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tolong-yang-salah-dimana-yacode-include-iostreaminclude-conio-husing-namespace-stdint-mainint-acoutmasukan-angkacinaifa0coutbilangan-positi">37.
+                                            Tolong yang salah dimana ya?code :#include &lt;iostream&gt;#include &lt;conio.h&gt;using namespace std;int main(){int a;cout&lt;&lt;"masukan angka:";cin&gt;&gt;a;if(a&gt;0)cout&lt;&lt;"bilangan positif:";elsecout&lt;&lt;"bilangan negatif:";getch();}​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berdasarkan-coding-di-atas-komponeen-yang-dinyatakan-sebagai-parameter-formal-adalah-a-void-latihan1-int-x-b-using-namespace-std-c-include-iostream-d-fungsi-utama-%e2%80%8b">38.
+                                            Berdasarkan coding di atas, komponeen yang dinyatakan sebagai parameter formal adalah...a. void Latihan1 (int x); b. using namespace std; c. #include &lt;iostream&gt;  d. // Fungsi utama ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#l-8-perhatikan-program-berikut-include-using-namespace-std-int-main-int-x-y-z-20-cout-x-endl-cout-y-endl-cout-z-endl-return-0-bagia">39.
+                                            L 8. Perhatikan program berikut! #include Using namespace std; Int main( Int x, y, z = 20; Cout &lt;&lt; x &lt;&lt; endl; Cout &lt;&lt; y &lt;&lt; endl; Cout &lt;&lt; Z &lt;&lt; endl; Return 0 } Bagian yang digarisbawahi berfungsi untuk​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-output-hasil-program-pada-koding-dibawah-iniinclude-iostream%c2%a0%c2%a0%c2%a0-using-namespace-std%c2%a0%c2%a0%c2%a0-int-main%c2%a0%c2%a0%c2%a0%c2%a0%c2%a0%c2%a0%c2%a0%c2%a0">40.
+                                            tuliskan output hasil program pada koding dibawah ini:#include &lt;iostream&gt;    using namespace std;    int main()    {      int i;      for (i-0; i &lt; 10; it++);      {        cout i;      }        return 0;    }​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="fungsi-dari-using-namespace-std-untuk-apa-ya">
+                            1. fungsi dari using namespace std; untuk apa ya ?</h2><br />
+                        untuk memberitahukan kepada kompiler bahwa kita akan menggunakan semua fungsi , class atau file yang terdapat pada memori namespace std.<br />
+                                            <h2 class="ez-toc-section" id="tolong-jelaskan-tentang-kode-program-c-using-namespace-std-int-char-long-if-else-dan-return-%e2%80%8b">
+                            2. Tolong jelaskan tentang kode program c++, using namespace std, int, char, long, If, else dan return.​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Saya bantu jelaskan</p><p><strong>Penjelasan:</strong></p><p>using namespace std berarti gunakan semua yang ada dalam namespace std, yang merupakan standard library di C++.</p><p>Int ( integer ) adalah tipe data khusus yang menyatakan tidak ada data. Penggunaannya khusus untuk beberapa situasi seperti function yang tidak mengembalikan nilai (return void), atau mengisi argumen function dengan nilai kosong.</p><p>Char adalah tipe data yang berisi 1 huruf atau 1 karakter.</p><p>Long : Mempunyai Fungsi hampir sama dengan integer yaitu mengelompokan bilangan bulat tetapi fungsi long adalah jika bilangan bulat yang di kelompokan itu jumlahnya sangat banyak, dan tipe data melebihi kapasitas tipe data dari integer , pembahasan ukuran dari tipe data akan di bahas di bawah nanti.</p><p>kondisi IF ELSE IF adalah sebuah struktur logika program yang di dapat dengan cara menyambung beberapa perintah IF ELSE menjadi sebuah kesatuan. Jika kondisi pertama tidak terpenuhi atau bernilai false, maka kode program akan lanjut ke kondisi IF di bawahnya.</p><p>Return berfungsi untuk mengakhri eksekusi dari function tersebut, dan return juga dapat memberikan nilai pada saat akhir dari function kepada pemanggil.</p><br />
+                                            <h2 class="ez-toc-section" id="include-using-namespace-stdint-maincouthello-world">
+                            3. #include using namespace std;int main(){cout&lt;&lt;"HELLO WORLD";}</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>HELLO WORD</p><p><strong>Penjelasan:</strong></p><p>Source Code yang anda berikan adalah bentuk penulisan program bahasa C++ yang mana cout adalah perintah untuk mencetak pada layar.</p><br />
+                                            <h2 class="ez-toc-section" id="perbaikilah-bentuk-command-di-bawah-ini-dan-berikan-hasil-output-dari-bahasa-program-tersebut-using-namespace-stdint-mainint-i1hasil0whilei5hasilhasiliicouthasil">
+                            4. Perbaikilah bentuk command di bawah ini dan berikan hasil output dari bahasa program tersebut !using namespace stdint main(){int i=1;hasil=0while(i&lt;=5){hasil=hasil+i,i++:}cout&lt;&lt;"hasil = "&lt;&lt;hasil&lt;&lt;endl;}​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Perbaikan program: pada bagian penjelasan di bawah ini.</p><p>Output hasil eksekusi program:</p><p><strong>hasil = 15</strong></p><p></p><p><strong>Penjelasan:</strong></p><p>//===========================</p><p>#include&lt;iostream&gt;</p><p>using namespace std;
+</p><p>
+</p><p>int main() {
+</p><p>    int i=1;
+</p><p>    int hasil=0;
+</p><p>
+</p><p>    while (i &lt;= 5) {
+</p><p>        hasil = hasil+i;
+</p><p>        i++;
+</p><p>    }
+</p><p>    cout &lt;&lt; "hasil = " &lt;&lt; hasil &lt;&lt; endl;
+</p><p>}</p><p>//===========================</p><br />
+                                            <h2 class="ez-toc-section" id="include-iostreamusing-namespace-std-int-mainint-nilai-52491522court-ecout-cegetchlengkapi-script-array-diatas-untuk-mengahasilkan-nilai-2-dan-15-seperti-gambar-diatas">
+                            5. #include &lt;iostream&gt;using namespace std ;int main){int nilai 5={24,9,1522),court &lt;ecout cegetch():Lengkapi script array diatas untuk mengahasilkan nilai 2 dan 15, seperti gambar diatas​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>90</p><p></p><p><strong>Penjelasan:</strong></p><p>index</p><p></p><p>1=0</p><p>2=1</p><p>3=2</p><p>4=3</p><p>5=4</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="include-iostream-using-namespace-std-int-main-string-nama5seninselasarabukamisjumatcoutnama1endlcoutnama4endl%e2%80%8b">
+                            6. #include &lt;iostream&gt; using namespace std; int main() { string nama[5]={"Senin","Selasa","Rabu","Kamis","Jumat"};	cout&lt;&lt;nama[1]&lt;&lt;endl;	cout&lt;&lt;nama[4]&lt;&lt;endl;}​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>output nya </p><p></p><p>Selasa</p><p>Jumat</p><p><strong>Penjelasan:</strong></p><p>indeks array itu selalu dimulai dari 0</p><p>nama[0] = Senin</p><p>nama[1] = Selasa</p><p>.</p><p>.</p><p>nama[4] = Jumat</p><br />
+                                            <h2 class="ez-toc-section" id="pada-penggunaan-sleep-perlu-sebuah-pemanggilan-file-header-yaitu-a-include-b-using-namespace-std-c-prototipe-fungsi-d-deklarasi-kelas-e-int-main-void-%e2%80%8b">
+                            7. Pada penggunaan sleep perlu sebuah pemanggilan file header yaitu .... a. #include b. using namespace std; c. // prototipe fungsi d. // deklarasi kelas () e. int main (void) {​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>a. include</p><p><strong>Penjelasan:</strong></p><p>#include &lt;nama&gt; berfungsi untuk memuat deklarasi fungsi atau makro yang akan digunakan didalam program</p><br />
+                                            <h2 class="ez-toc-section" id="include-include-using-namespace-std-int-main-vector-myvector-5-4-3-2-1-myvector-pop_back-for-auto-it-myvector-begin-it-myvector-end-it-cout-it">
+                            8.  #include #include using namespace std; int main() ( } vector myvector( 5, 4, 3, 2, 1); myvector.pop_back(); for (auto it - myvector.begin(); it != myvector.end(); ++it) cout &lt;&lt; "&lt;&lt;*it; ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p></p><p>#include &lt;iostream&gt;</p><p>#include &lt;vector&gt;</p><p></p><p>using namespace std;</p><p></p><p>int main() {</p><p>    vector&lt;int&gt; myvector = {5 4 3 2 1};</p><p>    myvector.pop_back();</p><p>    </p><p>    for (auto it = myvector.begin(); it != myvector.end(); ++it) {</p><p>        cout &lt;&lt; *it &lt;&lt; " ";</p><p>    }</p><p></p><p>    return 0;</p><p>}</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-syntak-pada-visual-studio-2010-untuk-2-fungsi-using-namespace-std-adalah-3-library-untuk-memanggil-pada-visual-studio-2010-adalah">
+                            9. 1. Syntak "" pada visual studio 2010 untuk ?
+2. Fungsi "using namespace std;" adalah ?
+3. Library untuk memanggil "" pada visual studio 2010 adalah ?</h2><br />
+                        1. tanda petik digunakan untuk menyatakan data yang dikeluarkan atau dimasukkan contoh : cout&lt;&lt;"Aku belajar c++"&lt;&lt;endl;<br />2. using namespace std digunakan untuk menyatakan bahwa setiap variabel menggunakan std jika tidak menggunakan using namespace std penulisannya menjadi seperti ini :<br />jika tidakk menggunakan<br /><br />std cout&lt;&lt;"djxjsj"&lt;&lt;endl;<br />
+                                            <h2 class="ez-toc-section" id="ppperhatikan-program-berikut-include-using-namespace-std-int-main-int-x-10-y-3-a-int-z-b-z-x-xy-c-cout-x-x-d-cout-endl-e-return-0-z-dari-progr">
+                            10. PpPerhatikan program berikut #include using namespace std; int main() { int x = 10, y = 3; A int z; B z = x Xy; C cout &lt;&lt; X &lt;&lt; "X D cout &lt;&lt; endl; E return 0; &lt;&lt; Z; } Dari program diatas, manakah penulisannya yang tidak benar?​</h2><br />
+                        <p>Baris B adalah penulisan yang tidak benar. Tidak ada operator "Xy" yang valid dalam bahasa pemrograman C++. Oleh karena itu, baris tersebut menghasilkan kesalahan sintaksis.</p><p></p><p>Jangan lupa jadikan jawaban tercerdas ya :)</p><br />
+                                            <h2 class="ez-toc-section" id="1-deskripsikan-logic-program-di-bawah-ini-include-using-namespace-stdint-main-int-uangsaya-10000-int-pilihannya-cout-mau-makan-pas-keluar-beli-makanan-hanya-ada-lt">
+                            11. 1. Deskripsikan Logic Program di bawah Ini 
+#include 
+using namespace std;
+int main()
+{
+ int uangSaya = 10000;
+ int pilihannya;
+ cout &lt;&lt; "Mau Makan, Pas Keluar Beli Makanan Hanya ada : " &lt;&lt; endl;
+ cout &lt;&lt; "1. Pecel Lele" &lt;&lt; endl;
+ cout &lt;&lt; "2. Stick Kentang" &lt;&lt; endl;
+ cout &lt;&lt; "Dengan uang segitu Saya bisa beli : ";
+ if(uangSaya &lt;= 6000) {
+ cout &lt;&lt; "Tidak beli apa apa" &lt;&lt; endl;
+ }
+ else if(uangSaya &gt;= 7000 &amp;&amp; uangSaya &lt;= 14000){
+ cout &lt;&lt; "Pecel lele aja " &lt;&lt; endl;
+ }
+ else if(uangSaya &gt;= 15000 &amp;&amp; uangSaya &lt;= 22000){
+ cout &lt;&lt; "Pecel Lele ATAU Stick Kentang ?? " &lt;&lt; endl;
+ }
+ else{
+ cout &lt;&lt; "Pecel Lele DAN Stick Kentang" &lt;&lt; endl;
+ }
+}</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>Jadi sepertinya kamu mencoba untuk menentukan keluaran yang akan terjadi. Kamu tidak meminta user untuk menginput apapun dan juga kamu sudah menetapkan </p><p>uangSaya= 10000</p><p></p><p>Jadi logikanya adalah apabila:</p><p>•&gt; Uangmu kurang dari 6000 (inklusif), maka outputnya adalah</p><p>'Tidak beli apa apa'</p><p>•&gt; Uangmu diantara 7000 dan 14000 (inklusif), maka outputnya adalah</p><p>'Pecel lele saja'</p><p>•&gt; Uangmu diantara 15000 dan 22000 (inklusif), maka outputnya adalah</p><p>'Pecel Lele ATAU Stick Kentang ??'</p><p>•&gt; Uangmu lebih dari 22000, maka outputnya adalah</p><p>'Pecel Lele DAN Stick Kentang'</p><p></p><p>uangSaya adalah 10000.</p><p>Kita tahu bahwa 10000 ada diantara 7000 dan 14000.</p><p></p><p><strong>Maka setelah program dijalankan akan mengeluarkan</strong></p><p></p><p><strong>Mau Makan, Pas Keluar Beli Makanan Hanya ada :</strong></p><p><strong>1. Pecel Lele</strong></p><p><strong>2. Stick Kentang</strong></p><p><strong>Dengan uang segitu Saya bisa beli : Pecel lele saja</strong></p><br />
+                                            <h2 class="ez-toc-section" id="includeiostreamusing-namespace-stdint-main-coutkataendlreturn-0-mohon-maaf-kak-program-di-atas-ternyata-error-kak-mohon-klarifikasi-di-mana-kesalahannya-ya-kak">
+                            12. include&lt;iostream&gt;using namespace std;int main (){      cout&lt;&lt;kata&lt;&lt;endl;return 0 }mohon maaf kak program di atas ternyata error kak....mohon klarifikasi di mana kesalahannya ya kak ?terima kasih​</h2><br />
+                        <p>#Catatan: kenapa tidak menggunakan debug? Itu compile error loh</p><p></p><p>" cout&lt;&lt;kata&lt;&lt;endl; "</p><p>              ^</p><p>Errornya berada di situ</p><p></p><p>Kamu belum mendeklarasi variabel "kata". Mungkin bisa menggunakan...</p><p>#include &lt;string&gt;</p><p>Dan </p><p>string kata = "...";</p><br />
+                                            <h2 class="ez-toc-section" id="tes-coding-program-yang-terdapat-pada-tampilan-berikutinclude-include-using-namespace-stdmain-int-x-int-px-pointer-ke-variabel-int-ppx-pointer-ke-pointer-x-175-px-x">
+                            13. Tes coding program yang terdapat pada tampilan berikut
+#include 
+#include 
+using namespace std;
+main() { 
+int x; 
+int *px; //pointer ke variabel 
+int **ppx; //pointer ke pointer 
+x = 175; 
+px = &amp;x; 
+ppx = &amp;px;
+cout &lt;&lt; "Nilai x = " &lt;&lt; x &lt;&lt; endl; 
+cout &lt;&lt; "Nilai px = " &lt;&lt; *px &lt;&lt; endl; 
+cout &lt;&lt; "Nilai ppx = " &lt;&lt; **ppx &lt;&lt; endl; 
+getch(); 
+}
+ Tugas
+1. Jelaskan maksud dari program di atas (di baca dari penulisan variabel) !
+2. Buatlah program pointer dengan menjelaskan maksud dari program tersebut !(coding dan hasil di capture)</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Salah satu kelebihan dari Bahasa C / C++ adalah Karena Bahasa ini mendukung sepenuhnya untuk pemanipulasian memori dengan menggunakan pointer, lalu apa itu pointer ? Pointer sendiri dapat didefinisikan sebagai variabel yang menyimpan alamat memori. Pada materi sebelumnya kita sudah terbiasa dengan penggunaan variabel, tapi variabel tersebut hanya berisi nilai, bukan alamat.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="include-include-include-using-namespace-std-void-tunjukkan_antrian-int-main-queue-antrian_pesanan-antrian_pesanan-pushmario-antrian_pesanan-pushpaisal-antrian_pesanan-pus">
+                            14. #include #include #include using namespace std; void tunjukkan_antrian(){ ..... } int main() { queue antrian_pesanan; antrian_pesanan.push("mario"); antrian_pesanan.push("paisal"); antrian_pesanan.push("fernanda"); tunjukkan_antrian(); return 0; } Lengkapi titik titik atau definisikan fungsi tunjukkan_antrian sehingga ketika dipanggil dapat menunjukkan antrian isi dari queue</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>antri menunggu pesanan dilestoran</p><br />
+                                            <h2 class="ez-toc-section" id="ada-yg-bisa-bantu-menjelaskan-kode-program-di-bawah-ini-include-using-namespace-std-int-main-int-ab-a40-ba-coutpointer-b-menunjukkan">
+                            15. Ada yg bisa bantu menjelaskan kode program di bawah ini :( #include using namespace std; int main(){ int a,*b; a=40; b=&amp;a; cout&lt;&lt;"Pointer b Menunjukkan : " &lt;</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>program menggunakan pointer pada C++</p><p><strong>Penjelasan:</strong></p><p>Penggunaan Pointer pada C++
+</p><p>
+</p><p>
+</p><p>#include &lt;iostream&gt;
+</p><p>
+</p><p>using namespace std;
+</p><p>
+</p><p>int main(){
+</p><p>
+</p><p>                int a,*b;
+</p><p>                a=40;
+</p><p>                b=&amp;a;
+</p><p>                </p><p>                cout&lt;&lt;"Pointer b Menunjukkan : " &lt;&lt;b&lt;&lt;endl;
+</p><p>                cout&lt;&lt;"Menunjukkan Nilai : " &lt;&lt;*b&lt;&lt;endl;
+</p><p>
+</p><p>                return 0;
+</p><p>
+</p><p>}
+</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="include-using-namespace-stdint-maincout-%e2%80%9c1-%e2%80%9d-1-endlcout-%e2%80%9c0-%e2%80%9d-0-endlreturn-0program-diatas-s">
+                            16. #include 
+using namespace std;
+int main(){
+cout &lt;&lt; “!1 = ” &lt;&lt; !1 &lt;&lt; endl;
+cout &lt;&lt; “!0 = ” &lt;&lt; !0 &lt;&lt; endl;
+return 0
+}
+Program diatas secara berturut-turut akan menghasilkan...</h2><br />
+                        <p>Jawaban:</p><p>!1 = 0 dan !0 = 1</p><p>Penjelasan:</p><p></p><p><strong>Jawaban:</strong></p><p>!1= !0=</p><p><strong>Penjelasan:</strong></p><p>maaf kalo salah  bang</p><br />
+                                            <h2 class="ez-toc-section" id="hasil-dari-kode-program-berikut-adalah-include-iostreamusing-namespace-std-int-main-int-x-157-y-%e2%81%b8-int-hasil-hasil-x-y-cout">
+                            17. Hasil dari kode program berikut adalah... #include &lt;iostream&gt;using namespace std; int main() {           int x = 157, y = ⁸;          int hasil;          hasil = x &amp; y;          cout&lt;&lt;hasil;          return 0;} O 1 O 5 O 2 O 4 O 3 ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Kode program tersebut akan menghasilkan output berupa angka desimal, yaitu 8. </p><p></p><p>Penjelasan: </p><p></p><p>Baris pertama mendeklarasikan variabel x dengan nilai 157 dan variabel y dengan nilai ⁸. Namun, terdapat kesalahan penulisan pada variabel y yaitu menggunakan karakter superskrip yang salah, sehingga programnya akan mengalami error saat dijalankan. </p><p></p><p>Namun, bila kita asumsikan karakter superskrip itu sebenarnya adalah angka 8, maka program akan berjalan dan menghasilkan output 8. </p><p></p><p>Pada baris selanjutnya, nilai variabel hasil dihitung dengan operasi bitwise AND antara nilai variabel x dan y (dalam biner). Nilai biner 157 adalah 10011101, sedangkan nilai biner 8 adalah 00001000. Jika kedua nilai tersebut di-operasikan dengan AND, maka hasilnya adalah 00001000 (dalam biner) atau 8 (dalam desimal).</p><p></p><p><strong>SEMOGA MEMBANTU :)</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="include-iostream-using-namespace-std-int-main-cout-hello-world-return-0-manakah-yang-merupakan-representasi-dari-standar-output-a-include-iostreamb-using-nam">
+                            18. #include &lt;iostream&gt; using namespace std; int main () {cout &lt;&lt; "Hello World!"; return 0; } Manakah yang merupakan representasi dari standar output ?a)  #include &lt;iostream&gt;b) using namespace std c) int main ()d) coute) return 0Please banget dibjawabbb yg tau </h2><br />
+                        kalau menurutku sih, yang return 0<br />
+                                            <h2 class="ez-toc-section" id="include-iostreamusing-namespace-stdmain-int-a-b-ca-7b-a-2-2c-a-bcoutc%e2%80%8b">
+                            19. #include &lt;iostream&gt;using namespace std;main(){ int A, B, C;A = 7;B = (A / 2) * 2;C = A - B;cout&lt;&lt;C;}​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Output:</p><p>1</p><p><strong>Penjelasan:</strong></p><p>A = 7</p><p>B = (A / 2) * 2</p><p>= (7 / 2) * 2</p><p>= 3 * 2</p><p>= 6</p><p>C = A - B</p><p>= 7 - 6</p><p>= 1</p><br />
+                                            <h2 class="ez-toc-section" id="a-include-iostreamusing-namespace-stdmain-int-a-5couta2endlcouta%e2%80%8b">
+                            20. a. #include &lt;iostream&gt;using namespace std;main(){ int A = 5;cout&lt;&lt;A+2&lt;&lt;endl;cout&lt;&lt;A;​</h2><br />
+                        <p>Hasil Program adalah </p><p></p>5+27<p><strong>Penjelasan:</strong></p><p>Pada { int A = 5;</p><p>Artinya pemberian variabel dimana A adalah 5.</p><p></p><p>Sedangkan saat cout&lt;&lt;A+2&lt;&lt;endl;</p><p>Artinya keluaran/ hasil program dimana variabel A berubah menjadi <strong>5</strong>.</p><p></p><p>Note*</p><p><strong>●</strong><strong> </strong><strong>endl</strong> berarti enter atau baris selanjutnya dalam keluaran/ hasil program.</p><p><strong>● cout</strong> adalah kode program untuk keluaran/ hasil program.</p><p></p><p>Pada cout&lt;&lt;A;</p><p>Artinya keluaran/ hasil program dimana operasi dari keluaran pertama (cout&lt;&lt;5+2&lt;&lt;endl;) yang berarti <strong>7</strong></p><p></p><p>Terima Kasih~~~</p><br />
+                                            <h2 class="ez-toc-section" id="cara-memperbaiki-program-di-imi-bagaimana-cara-memperbikiinclude-include-using-namespace-stdint-main-system-color-b6int-menucoutncout__________________">
+                            21. cara memperbaiki program di imi. bagaimana cara memperbiki??
+#include 
+#include 
+using namespace std;
+int main ()
+{
+	system ("color b6");
+	int menu;
+	cout&lt;&lt;"\n";
+	cout&lt;&lt;"________________________________________________"&lt;&gt;menu;
+	switch (menu){
+		default:
+			system("color e6");
+			cout&lt;&lt;"\N";
+			cout&lt;&lt;" :+------------------------------------------------+"&lt;</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p>#include &lt;iostream&gt;
+</p><p>#include &lt;string&gt;
+</p><p>using namespace std;
+</p><p>int main()
+</p><p>{
+</p><p>  system ("color b6");
+</p><p>  int menu;
+</p><p>  cout&lt;&lt;"\n";
+</p><p>  cout&lt;&lt;"________________________________________________";
+</p><p>  cin &gt;&gt; menu;
+</p><p>  switch (menu){
+</p><p>  default:
+</p><p>  system("color e6");
+</p><p>  cout&lt;&lt;"\n";
+</p><p>  cout&lt;&lt;" :+------------------------------------------------+";
+</p><p>  }
+</p><p>}</p><br />
+                                            <h2 class="ez-toc-section" id="algoritma-c-nested-for-includeiostreamusing-namespace-stdint-mainint-abc7for-for-cout-return-0tolong-isi-titiknya-dong-sesuai-gambaran">
+                            22. algoritma C++ , nested for .#include&lt;iostream&gt;using namespace std;int main(){int a,b,c=7;for (........){for (........){cout&lt;&lt;....;}return 0;}tolong isi titik"nya dong sesuai gambaran​</h2><br />
+                        <p>for (int a = 7; a &gt;= 1; a--)</p><p>{</p><p>    for (int b = 1; b &lt;= a; b++)</p><p>    {</p><p>        cout &lt;&lt; b;</p><p>    }</p><p>    cout &lt;&lt; endl;</p><p>}</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-fungsi-dari-%e2%80%9cusing-name-space-std%e2%80%9d">
+                            23. 	Jelaskan fungsi dari “using name space std” !</h2><br />
+                        <p>Using namespace std <strong>adalah </strong>salah satu instruksi yang dapat kita berikan kepada aplikasi compiler terkait penggunaan fungsi dalam sebuah kerangka yagn sama. </p><p></p>Pembahasan<p>Pada kesempatan ini, soal memitna kit auntuk menjelaskan fungsi tersebut. Berikut kakak akan mencoba menjelaskannya secara sederhana.</p><p></p><p><strong>USING NAMESPACE STD MERUPAKAN PERINTAH YANG DAPAT KITA GUNAKAN UTNUK MENYAJIKAN PERINTAH ATAU DEKLARASI KEPADA SEBUAH APLIKASI COMPILER YANG MENYATAKAN BAHWA KITA AKAN MENGGUNAKAN SELURUH BERKAS, CLASS, ATAU FUNGSI YANG MENJADI BAGIAN DARI SEBUAH NAMESPACE STD YANG BERSANGKUTAN. </strong></p><p><strong>BERKAT PENGGUNAAN FUNGSI INI, KITA DAPAT MENGHINDARI KESALAHAN BERUPA TIDAK DIKENALINYA COUT DAN CIN OLEH SISTEM AKIBAT KETIADAAN SYNTAX STD SEKALIGUS SEBAGAI PENGENAL YANG UNIK DARI CIN DAN COUT YANG INGIN KITA GUNAKAN DARI SELURUH KOMBINASI MAUPUN INSTRUKSI YANG TERSEDIA. </strong></p><p><strong></strong></p>Pelajari lebih lanjut<p>Pada materi ini, kamu dapat belajar tentang algoritma:</p><p>https://brainly.co.id/tugas/16929479</p><p></p>Detil jawaban<p><strong>Kelas: SMA</strong></p><p><strong>Mata pelajaran: TI</strong></p><p><strong>Bab: -</strong></p><p><strong>Kode kategori: -</strong></p><p><strong></strong></p><p><strong>Kata kunci: fungsi, using namespace std</strong></p><br />
+                                            <h2 class="ez-toc-section" id="tolong-dijawab-ya-pertanyaan-seputar-c1-apa-maksud-dari-baris-include2-mengapa-fungsi-main-di-depannya-ada-int3-mengapa-fungsi-main-memiliki-pernyataan-return-04-apa-maksud-dari-angka-n">
+                            24. Tolong dijawab ya pertanyaan seputar C++
+1.Apa maksud dari baris "include"?
+2.Mengapa fungsi main di depannya ada "int"?
+3.Mengapa fungsi main memiliki pernyataan "return 0"?
+4.Apa maksud dari angka nol tersebut?4.Untuk apa “using namespace std” itu? Mengapa di beberapa referensi tidak ada tetapi di perangkat pemrograman, saya harus menyertakan itu supaya program bisa berjalan?
+5.Apa perbedaan antara C dan C++? Mana yang lebih baik antara keduanya?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p><strong>1</strong><strong>.</strong><strong> </strong>include adalah pengarah (directive) untuk menayatakan compiler menyertakan librari tertentu.</p><p>Semua baris yang diawali dengan simbol kres (#) adalah pengarah preprosesor. Pengarah preprosesor berfungsi untuk mengatur agar compiler menyesuaikan kode mesin dengan sistem komputeryang digunakan</p><p><strong>2</strong><strong>.</strong><strong> </strong>Int  adalah fungsi utama sebagai starting point untuk program c/c++, seenggaknya harus ada satu fungsi ini agar saat running machine tahu mulai dari fungsi mana</p><p></p><p><strong>Jawaban:</strong></p><p>1. Maksud dari "include: adalah untuk menjelsakan bahwa program menyertakan file pustaka bernama "iostream" sebagai input-output.</p><p>2. Maksud dari int di depan main adalah tipe data yang akan dikembalikan. Maka di dalam fungsi main() , wajib kita sertakan return 0 . Artinya, fungsi main akan mengembalikan nilai 0 setelah selesai dieksekusi</p><p>3. Setiap program C/C++ harus memiliki sebuah main . main merupakan kode awal yang akan dieksekusi ketika program dijalankan, dan juga menyatakan hasil keluaran dari fungsi main() adalah 0. Pada C++.</p><p>4.  Return 0 dalam main() menyatakan bahwa program berakhir dengan normal.</p><p>5. Untuk dapat menemukan secara pasti di dalam kelompok perintah mana, cout dan endl tersebut berada, maka digunakanlah perintah "using namespace   std;". </p><p>6. Bahasa C merupakan bahasa pemrograman prosedural, di mana penyelesaian terhadap sebuah persoalan dilakukan dengan membagi-bagi persoalan selanjutnya ke di dalam sub-sub persoalan yang lebih kecil.</p><p>Sedangkan C++ adalah bahasa pemrograman yang punyai sifat Object Oriented Programming (OOP).</p><p>_______________________________________________</p><p>Kenali :</p><p>Apa itu C++?</p><p>= C ++ adalah bahasa pemrograman komputer yang ditulis oleh Bjarne Stroustrup, dan pengembangan bahasa C dikembangkan di Bell Labs (Dennis Ritchie) pada awal tahun 1970-an.</p><p></p><p>---------- KAZUSAGAWA -------------</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="perhatikan-algoritma-berikut-include-using-namespace-std-int-main-int-x1-while-x10-cout-if-x5-break">
+                            25. Perhatikan Algoritma berikut
+ #include
+  using namespace std;
+    Int main ()
+     {
+       int x=1;
+       While (x&lt;=10) {
+                    cout&lt;
+                     if (x==5) break;
+                      x++;
+                        }
+                 cout&lt;&lt;"nilai x berakhir ="&lt;
+                   return 0;
+                     }
+Kode program diatas menggunakan struktur peeulangan while-do.Terdapat pernyataan break yang memengaruhi hasil yang dimiliki.Dengan penggunaan Pernyataan ini maka kode program diatas menampilkan hasil?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>maka akan menghasilkan sampai angka 5 saja, tetapi kalo sintaks break di ubah menjadi continue maka akan tetap berlanjut</p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-baris-kode-berikut-include-using-namespace-std-int-main-deklarasi-variable-int-time-22-if-time-10-cout-good-morning-else-if-time-20-cout">
+                            26. Jelaskan baris kode berikut! #include using namespace std; int main() { // Deklarasi variable int time = 22; if (time &lt; 10) { cout &lt;&lt; "Good morning."; } else if (time &lt; 20) { cout &lt;&lt; "Good day."; } else { cout &lt;&lt; "Good evening."; } return 0; }​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>hasil dari program tersebut adalah Good Evening</p><p><strong>Penjelasan:</strong></p><p>karena ketika variabel int time dideklarasi dan diberi nilai sebesar 22, tidak ada cabang <strong>if </strong>maupun. <strong>else </strong><strong>if,</strong><strong> </strong>yang memenuhi kondisi sehingga kode blok else terakhir pun dijalankan.</p><br />
+                                            <h2 class="ez-toc-section" id="include-using-namespace-stdint-main-int-umur14-if-umur18-if-umur10-coutanak-anak-else-coutremaja-else-coutbukan-usia-a">
+                            27. #include 
+using namespace std;
+int main()
+{
+ int umur=14;
+ if (umur&lt;=18)
+ {
+ if (umur&lt;=10){
+ cout&lt;&lt;"Anak-anak"&lt;
+ }else {
+ cout&lt;&lt;"Remaja"&lt;
+ }
+ }else {
+ cout&lt;&lt;"Bukan usia anak maupun remaja"&lt;
+ }
+}
+Program tersebut menghasilkan output?</h2><br />
+                        <p>Jawaban:</p><p>remaja</p><p></p><p>Penjelasan:</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="include-iostreamusing-namespace-stdmain-int-a-b-a-5-b-2a-bcouta-endlcoutb%e2%80%8b">
+                            28. #include &lt;iostream&gt;using namespace std;main(){ int A, B; A = 5; B = 2;A = B;cout&lt;&lt;A &lt;&lt;endl;cout&lt;&lt;B;​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>...................</p><p><strong>Penjelasan:</strong></p><p>. . . . . . . </p><p><strong>Jawaban:</strong></p><p>2</p><p>2</p><p><strong>Penjelasan:</strong></p><p>Dikerjakan sesuai perintah dari soal anda ya, kalau salah maaf</p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-fungsi%c2%b2-codingan-c-berikut-ini1-includeiostream2-includeconio-h3includestring4-using-namespace-std5-int-main6-string7-cout8-endl9-getch">
+                            29. tuliskan fungsi² codingan c++ berikut ini:1. #include&lt;iostream&lt;2.#include&lt;conio.h&lt;3#include&lt;string&lt;4. using namespace std;5. int main()6. string7. cout&lt;&lt;8. endl;9. getch;​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>kurungsiku penulisannya &lt;&gt;</p><p>1. include </p><p>iostream </p><p>conio.h</p><p>string</p><p>using namespace std; </p><p>merupakan file header dalam penulisan program </p><p>int main () </p><p>string : karakter </p><p>cout : output </p><p>end : endline </p><p>getch : getcharacter</p><p></p><p>berikut penjelasan dr laporan saya dulu </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="input-include-using-namespace-std-int-mainint-argc-char-const-argv-cout-software-sublime-text-3-compiler-mingw-64bits-windows-64bits-pertanyaannya-kenapa-bisa-begitu-ap">
+                            30. Input : #include  using namespace std; int main(int argc, char const *argv[]){ cout  Software : Sublime Text 3 Compiler : MinGW-64bits &amp;&amp; Windows 64bits Pertanyaannya : Kenapa bisa begitu ? Apa yang harus di lakukan agar sublime text 3 tidak mengeluarkan pesan error yang seperti itu ?</h2><br />
+                        Itu berarti belum ad compilerny, agan harus install manual compiler MinGw nya<br />
+                                            <h2 class="ez-toc-section" id="include-iostreamusing-namespace-stdint-mainint-bulat-5-812269020nilai-variable-yag-diberikan-pada-indek-array-ke-3-adalah-%e2%80%8b">
+                            31. # include &lt;iostream&gt;Using namespace std;int main(){int bulat [5] = {8,12,26,90,20};Nilai variable yag diberikan pada indek array ke 3 adalah..​</h2><br />
+                        <p>Jawaban:90</p><p></p><p>Penjelasan:</p><p>Index </p><p>1=0</p><p>2=1</p><p>3=2</p><p>4=3</p><p>5=4</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="lengkapi-struktur-programperulangan-dibawah-ini-includeconio-hinclude-iostream-husing-namespace-stdint-main-a-b-a1-a-5-aforb-a-b-5-bcou">
+                            32. Lengkapi struktur programperulangan dibawah ini *#include&lt;conio.h&gt;#include &lt;iostream h&gt;using namespace std;int main......... a, b,........(a=1; a &lt;= 5; a++)for(b = a; b &lt;= 5; b++)cout &lt;a&lt;&lt;"";getch():return 0;​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>#include &lt;iostream&gt;
+</p><p>#include &lt;conio.h&gt;
+</p><p>
+</p><p>using namespace std;
+</p><p>
+</p><p>int main()
+</p><p>{
+</p><p>	int a,b;
+</p><p>	for(a=1; a &lt;= 5; a++){
+</p><p>  for(b=a; b &lt;= 5; b++){
+</p><p>  	cout &lt;&lt; a &lt;&lt; " ";
+</p><p>  }
+</p><p>	}
+</p><p>  </p><p>	getch();
+</p><p>	return 0;
+</p><p>}
+</p><p></p><p><strong>Penjelasan:</strong></p><p>saya kurang paham sama pertanyaannya, jadi saya hanya memperbaiki programnya.</p><p>saya menggunakan tools DevC++ untuk menjalankan program diatas, jika anda tidak mempunyai tools nya, compiler online juga ada, silahkan gunakan kata kunci "onlinegdb compiler c++ online" di pencarian, karena saya juga mencoba di onlinegdb berfungsi dengan baik</p><br />
+                                            <h2 class="ez-toc-section" id="include-include-using-namespace-std-int-main-int-r-coutmasukan-bilangan-pertama-cinm-coutmasukan-bilangan-kedua-cinn-r-mn-do-cout">
+                            33. #include #include using namespace std;  int main() {  int r; cout&lt;&lt;"Masukan bilangan pertama : "; cin&gt;&gt;m; cout&lt;&lt;"Masukan bilangan kedua : "; cin&gt;&gt;n;  r = m%n; do { 	cout&lt;&lt;"Bilangan pertama : "&lt;</h2><br />
+                        itu m, n nya belum di declare di int atau float, nggak error tuh?<br />
+                                            <h2 class="ez-toc-section" id="include-using-namespace-stdint-main-int-i4-while-i10-cout-program-while-cout-i-endl-i-2-cout-finish-endlreturn-0">
+                            34. #include 
+using namespace std;
+int main()
+{
+ int i=4;
+ while (i&lt;10){
+ cout &lt;&lt; "Program While" ;
+ cout &lt;&lt; i &lt;&lt; endl;
+ i += 2;
+ }
+ cout &lt;&lt; "Finish" &lt;&lt; endl;
+return (0);
+}
+Output dari program diatas adalah</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Program While4
+</p><p>Program While6
+</p><p>Program While8
+</p><p>Finish</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="include-using-namespace-stdint-main-string-nama5dimasrinialdibayuputri-cout-coutperhatikan-program-diatas-hasil-output-dari-program-tersebut-adalah">
+                            35. #include 
+using namespace std;
+int main() {
+ string nama[5]={"Dimas","Rini","Aldi","Bayu","Putri"};
+ cout&lt;
+ cout&lt;
+}
+Perhatikan program diatas, hasil output dari program tersebut adalah?</h2><br />
+                        <p>Jawaban:</p><p>Rini dan Bayu</p><p>Penjelasan:</p><p></p><p><strong>Jawaban:</strong></p><p>rini dan bayu</p><p><strong>Penjelasan:</strong></p><p>maaf kalau salah</p><br />
+                                            <h2 class="ez-toc-section" id="tentukan-output-dari-kode-program-array-satu-dimensi-dibawah-ini-include-using-namespace-std-int-nilai-8-9-2-1-2-4-6-int-i-hasil0-int-main-for-i0-i7-i-hasil">
+                            36. Tentukan output dari kode program array satu dimensi dibawah ini .... #include using namespace std; int nilai[] = {8, 9, 2, 1, 2, 4, 6}; int i, hasil=0; int main (){ for ( i=0 ; i&lt;7 ; ++i ){ hasil+= nilai[i]; } cout &lt;&lt; hasil; return 0; }</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Jawabannya 32</p><p><strong>Penjelasan:</strong></p><p>Proses looping tersebut menghitung kesuluruhan isi di dalam array dengan penjelasan sebagai berikut:</p><p></p><p>Looping Pertama dimana i = 0 dengan proses</p><p>hasil += nilai[i] atau nilai[0] maka array nilai ke 0 memiliki isi 8</p><p>sehingga hasil = 8</p><p></p><p>Looping Kedua dimana i = 1 dengan proses</p><p>hasil += nilai[i] atau nilai[1] maka array nilai ke 1 memiliki isi 9</p><p>sehingga hasil = 8 + 9 = 17</p><p></p><p>Looping Kedua dimana i = 2 dengan proses</p><p>hasil += nilai[i] atau nilai[2] maka array nilai ke 2 memiliki isi 2</p><p>sehingga hasil = 8 + 9 + 2 = 19</p><p>.</p><p>.</p><p>.</p><p>dst sampai</p><p>Looping Keenam dimana i = 6 dengan proses</p><p>hasil += nilai[i] atau nilai[6] maka array nilai ke 6 memiliki isi 6</p><p>sehingga hasil = 8 + 9 + 2 + 1 + 2 + 4 + 6 = 32</p><p></p><p>karena selanjutnya nilai i adalah 7 dimana proses looping hanya berlanjut apabila i &lt; 7 maka proses loop berhenti sehingga hasil algoritma tersebut adalah 32.</p><br />
+                                            <h2 class="ez-toc-section" id="tolong-yang-salah-dimana-yacode-include-iostreaminclude-conio-husing-namespace-stdint-mainint-acoutmasukan-angkacinaifa0coutbilangan-positi">
+                            37. Tolong yang salah dimana ya?code :#include &lt;iostream&gt;#include &lt;conio.h&gt;using namespace std;int main(){int a;cout&lt;&lt;"masukan angka:";cin&gt;&gt;a;if(a&gt;0)cout&lt;&lt;"bilangan positif:";elsecout&lt;&lt;"bilangan negatif:";getch();}​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>itu sudah benar.</p><p><strong>Penjelasan:</strong></p><p>itu sudah benar.</p><br />
+                                            <h2 class="ez-toc-section" id="berdasarkan-coding-di-atas-komponeen-yang-dinyatakan-sebagai-parameter-formal-adalah-a-void-latihan1-int-x-b-using-namespace-std-c-include-iostream-d-fungsi-utama-%e2%80%8b">
+                            38. Berdasarkan coding di atas, komponeen yang dinyatakan sebagai parameter formal adalah...a. void Latihan1 (int x); b. using namespace std; c. #include &lt;iostream&gt;  d. // Fungsi utama ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>A. void Latihan1 (int x);</p><p><strong>Penjelasan:</strong></p><p>Hal ini dikarenakan parameter formal merupakan suatu parameter yang diteruskan ketika kita mendefinisikan suatu fungsi. </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="l-8-perhatikan-program-berikut-include-using-namespace-std-int-main-int-x-y-z-20-cout-x-endl-cout-y-endl-cout-z-endl-return-0-bagia">
+                            39. L 8. Perhatikan program berikut! #include Using namespace std; Int main( Int x, y, z = 20; Cout &lt;&lt; x &lt;&lt; endl; Cout &lt;&lt; y &lt;&lt; endl; Cout &lt;&lt; Z &lt;&lt; endl; Return 0 } Bagian yang digarisbawahi berfungsi untuk​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Bagian yang digarisbawahi dalam program tersebut adalah inisialisasi variabel z dengan nilai 20. Dalam program tersebut, terdapat tiga variabel x, y, dan z yang dideklarasikan dan diinisialisasi nilainya secara bersamaan di dalam header fungsi main().</p><p></p><p>Variabel z diinisialisasi dengan nilai 20, sementara variabel x dan y tidak diinisialisasi, sehingga nilai awal kedua variabel tersebut tidak dapat dipastikan. Kemudian, program mencetak nilai dari variabel x, y, dan z secara berurutan dengan menggunakan fungsi cout.</p><p></p><p>Program tersebut tidak melakukan operasi atau perhitungan apapun pada variabel x, y, dan z, sehingga nilai-nilai tersebut hanya ditampilkan tanpa perubahan apapun. Program tersebut hanya digunakan untuk menunjukkan cara inisialisasi dan cetak nilai variabel dalam bahasa pemrograman C++.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-output-hasil-program-pada-koding-dibawah-iniinclude-iostream%c2%a0%c2%a0%c2%a0-using-namespace-std%c2%a0%c2%a0%c2%a0-int-main%c2%a0%c2%a0%c2%a0%c2%a0%c2%a0%c2%a0%c2%a0%c2%a0">
+                            40. tuliskan output hasil program pada koding dibawah ini:#include &lt;iostream&gt;    using namespace std;    int main()    {      int i;      for (i-0; i &lt; 10; it++);      {        cout i;      }        return 0;    }​</h2><br />
+                        <p>Saya asumsikan bahwa tujuan dari programnya adalah ingin membuat looping dari 0 sampe 9</p><p>Jika pertanyaan anda hasil output dari program yang anda buat apa? maka saya pastikan <strong>programmnya pasti error</strong></p><p><strong>Berikut penjelasannya:</strong></p><p>1. pada fungsi for yang benar itu for(... i++) bukan for(... it++)</p><p>2.  pada fungsi for yang benar itu for(i=0) bukan for(i-0)</p><p>3. pada fungsi for itu yang benar for(){} bukan for();{}</p><p>4. untuk print hasilnya pake cout &lt;&lt; i &lt;&lt; endl</p><p></p><p>Program yang sudah saya revisi:</p><p>#include&lt;iostream&gt;&gt;
+</p><p>
+</p><p>using namespace std;
+</p><p>
+</p><p>int main()
+</p><p>{
+</p><p>    int i;
+</p><p>    for(i=0; i&lt;10; i++){
+</p><p>        cout &lt;&lt; i &lt;&lt; endl;
+</p><p>    }
+</p><p>    return 0;
+</p><p>
+</p><p>}
+</p><p>
+</p><p></p><p>SEKIANN ^_^</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/HsOy3BQMtRw?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/kumpulan-soal-percobaan-melde.html">Kumpulan Soal Percobaan Melde</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/kisi-kisi-dan-naskah-praktek-prakarya-kelas-7-kurikulum-2013.html">Kisi Kisi Dan Naskah Praktek Prakarya Kelas 7 Kurikulum 2013</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/jelaskan-apa-yang-dimaksud-dengan-shinto.html">Jelaskan Apa Yang Dimaksud Dengan Shinto</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/kumpulan-judul-skripsi-jurusan-hukum-perdata.html">Kumpulan Judul Skripsi Jurusan Hukum Perdata</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/kisi-kisi-uts-kelas-10-semester-1.html">Kisi Kisi Uts Kelas 10 Semester 1</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/judul-skripsi-hukum-pidana-update.html">Judul Skripsi Hukum Pidana Update</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/kisi-kisi-soal-aaji-2015.html">Kisi Kisi Soal Aaji 2015</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/kisi-kisi-ips-kelas-7-ktsp.html">Kisi Kisi Ips Kelas 7 Ktsp</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/kumpulan-soal-limit-dan-penjelasannya.html">Kumpulan Soal Limit Dan Penjelasannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/kisi-difraksi-cahaya-rumus.html">Kisi Difraksi Cahaya Rumus</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/format-kisi-kisi-soal-k13-prakarya-sma.html">Format Kisi Kisi Soal K13 Prakarya Sma</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/kumpulan-soal-pai-kls-3-semester-2.html">Kumpulan Soal Pai Kls 3 Semester 2</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/contoh-kisi-kisi-dalam-soal-ujain.html">Contoh Kisi Kisi Dalam Soal Ujain</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/berikut-yang-tidak-termasuk-bentuk-kesenjangan-klasik-adalah.html">Berikut Yang Tidak Termasuk Bentuk Kesenjangan Klasik Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/kumpulan-soal-sosiologi-kelas-11-tentang-konflik-sosial.html">Kumpulan Soal Sosiologi Kelas 11 Tentang Konflik Sosial</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/kisi-kisi-pkn-kelas-x-semester-1.html">Kisi Kisi Pkn Kelas X Semester 1</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/download-kumpulan-soal-olimpiade-ipa-kelas-3-dan-4-sd.html">Download Kumpulan Soal Olimpiade Ipa Kelas 3 Dan 4 Sd</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/judul-skripsi-tentang-psikologi-positif.html">Judul Skripsi Tentang Psikologi Positif</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/kisi-kisi-usbn-bahasa-inggris-sma-2019.html">Kisi Kisi Usbn Bahasa Inggris Sma 2019</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/cek-judul-skripsi-dikti.html">Cek Judul Skripsi Dikti</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://skripsipintar.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://skripsipintar.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://skripsipintar.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://skripsipintar.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://skripsipintar.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

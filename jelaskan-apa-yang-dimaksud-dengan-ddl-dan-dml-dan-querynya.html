@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jelaskan Apa Yang Dimaksud Dengan Ddl Dan Dml Dan Querynya - BELAJAR</title>
+    <meta name="description" content="Jelaskan Apa Yang Dimaksud Dengan Ddl Dan Dml Dan Querynya, , , , , , , 0, , , , , , 0, jelaskan-apa-yang-dimaksud-dengan-ddl-dan-dml-dan-querynya, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Jelaskan Apa Yang Dimaksud Dengan Ddl Dan Dml Dan Querynya - BELAJAR" />
+    <meta property="og:description" content="Jelaskan Apa Yang Dimaksud Dengan Ddl Dan Dml Dan Querynya, , , , , , , 0, , , , , , 0, jelaskan-apa-yang-dimaksud-dengan-ddl-dan-dml-dan-querynya, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jelaskan Apa Yang Dimaksud Dengan Ddl Dan Dml Dan Querynya - BELAJAR" />
+    <meta name="twitter:description" content="Jelaskan Apa Yang Dimaksud Dengan Ddl Dan Dml Dan Querynya, , , , , , , 0, , , , , , 0, jelaskan-apa-yang-dimaksud-dengan-ddl-dan-dml-dan-querynya, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://skripsipintar.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://skripsipintar.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://skripsipintar.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://skripsipintar.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://skripsipintar.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://skripsipintar.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://skripsipintar.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://skripsipintar.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://skripsipintar.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://skripsipintar.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Jelaskan Apa Yang Dimaksud Dengan Ddl Dan Dml Dan Querynya</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">Ankher5600</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Jelaskan+Apa+Yang+Dimaksud+Dengan+Ddl+Dan+Dml+Dan+Querynya" alt="Jelaskan Apa Yang Dimaksud Dengan Ddl Dan Dml Dan Querynya">
+                    </div>
+                    <p></p>
+                    <p>Jelaskan perbedaan ddl dan dml</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-perbedaan-ddl-dan-dml">1.
+                                            Jelaskan perbedaan ddl dan dml</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-perbedaan-antara-ddl-dan-dml-%e2%80%8b">2.
+                                            jelaskan perbedaan Antara ddl Dan dml ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-query-yang-termasuk-dalam-ddl">3.
+                                            jelaskan query yang termasuk dalam DDL</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-langkah-langkah-membuat-query">4.
+                                            jelaskan langkah langkah membuat query</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-yang-di-maksud-degan-query-mysql-biasa">5.
+                                            apa yang di maksud degan query mysql biasa</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-perbedaan-fungsi-perintah-query-drop-dan-delete">6.
+                                            Jelaskan perbedaan fungsi perintah query drop dan delete !</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-pengertian-dari-execute-query">7.
+                                            Jelaskan pengertian dari execute query</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-yang-dimaksud-query-pada-database">8.
+                                            apa yang dimaksud query pada database?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#urutan-yang-tepat-untuk-membuat-sebuah-database-adalah-a-tabel-form-report-queryb-form-tabel-query-reportc-tabel-query-form-reportd-reprot-query-form-tabel%e2%80%8b">9.
+                                            Urutan yang tepat untuk membuat sebuah database adalah...a. Tabel, form, report, queryb. Form, tabel, query, reportc. Tabel, query, form, reportd. Reprot, query, form, tabel​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikan-contoh-untuk-basis-data-ddl-dan-dml">10.
+                                            Berikan contoh untuk basis data DDL dan DML!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#2-jelaskan-apa-yang-dimaksud-dengan-search-query">11.
+                                            2. Jelaskan apa yang dimaksud dengan search query! </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#doa-sebelum-belajar-dml-bhs-inggris">12.
+                                            Doa sebelum belajar dml bhs Inggris</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikut-ini-untuk-membuat-query-padams-access-kita-gunakan-fitur-%e2%80%a6-a-query-wizard-b-make-query-c-query-design-d-d-dan-e-benar-e-query-access">13.
+                                            Berikut ini untuk membuat query padaMs. Access, kita gunakan fitur …  
+a. Query Wizard 
+b. Make Query 
+c. Query Design 
+d. D dan E benar 
+e. Query Access</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-itu-ddl-dml-dcl-dalam-basisdata-dan-jelaskan-mengenai-isinya">14.
+                                            Apa itu DDL, DML, DCL dalam Basisdata dan jelaskan mengenai isinya?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-kepanjangan-dari-ddl%e2%80%8b">15.
+                                            Apa kepanjangan dari DDL​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-perbedaan-antara-dcl-ddl-dan-dml-serta-berikan-contohnnya">16.
+                                            Jelaskan Perbedaan antara DCL, DDL, dan DML serta berikan contohnnya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pada-sistem-basis-data-bank-setiap-pembukaan-akun-baru-akan-menambahkan-data-baru-ke-basis-data-bank-dalam-sql-yang-digunakan-untuk-menambah-data-baru-tersebut-adalah%e2%80%a6-a-dclb-ddlc-dml">17.
+                                            Pada sistem basis data Bank, setiap pembukaan akun baru akan menambahkan data baru ke basis data bank. Dalam SQL yang digunakan untuk menambah data baru tersebut adalah….
+a. DCL
+b. DDL
+c. DML
+d. TCL
+e. DBA</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perbedaan-ddldmldcltcl">18.
+                                            perbedaan ddl,dml,dcl,tcl</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#command-query-yang-digunakan-untuk-menemukan-apakah-data-yang-dicari-berada-di-dalam-query">19.
+                                            Command query yang digunakan untuk menemukan apakah data yang dicari berada di dalam query</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mengambil-data-dari-satu-atau-banyak-tabel-hasilnya-akan-dijadikan-sebuah-tabel-baru-adalah-fungsi-dari-a-query-parameterb-make-table-queryc-queryd-query-perhitungan%e2%80%8b">20.
+                                            Mengambil data dari satu atau banyak tabel, hasilnya akan dijadikan sebuah tabel baru adalah fungsi dari ...a. query parameterb. make table queryc. queryd. query perhitungan​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-yg-anda-ketahui-tentang-query-interface">21.
+                                            Jelaskan yg anda ketahui tentang query interface</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-perbedaan-ddl-language-dan-dml-language">22.
+                                            jelaskan perbedaan DDL language dan DML language</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-update-data-dengan-menggunakan-datasheet-dan-query">23.
+                                            jelaskan update data dengan menggunakan datasheet dan query</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-yang-dimaksud-dengan-query">24.
+                                            apa yang dimaksud dengan query?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-query-interface">25.
+                                            jelaskan query interface</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-bagaimana-pengaksesan-query-dari-client-ke-server-dan-hasil-query-dari-server-ke-client">26.
+                                            Jelaskan bagaimana pengaksesan query dari client ke server dan hasil query dari server ke client </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-query-interface-dan-berikan-contohnya">27.
+                                            Jelaskan query interface dan berikan contohnya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jika-anda-ingin-menambah-record-gunakan-a-update-queryb-append-queryc-delete-queryd-recorde-cancel">28.
+                                            Jika anda ingin menambah record gunakan..
+A. Update query
+B. Append query
+C. Delete query
+D. Record
+E. Cancel</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-dan-jelaskan-minimal-2-perintah-dari-ddl">29.
+                                            Sebutkan dan Jelaskan minimal 2 perintah dari ddl</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-apa-itu-web-dan-log-domain-hosting-ddl">30.
+                                            Jelaskan apa itu web dan log, domain-hosting, DDL</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-database-sesuai-kasus-dengan-menggunakan-sql-pada-sql-server-ddl-dan-dml-lakukan-hal-%e2%80%93-hal-sebagai-berikut-a-untuk-dml-insert-minimal-20-record-update-dan-delete-minimal-ada-10-qu">31.
+                                            Buatlah database sesuai kasus dengan menggunakan SQL pada SQL Server, DDL dan DML. Lakukan hal – hal sebagai berikut :a. Untuk DML insert minimal 20 record; update dan delete minimal ada 10 query untuk setiap table. b. Buatlah query untuk inner join dan outer join antar table dengan minimal 2 query dan kondisi ‘where’c. Buatlah query untuk penerapan fungsi agregat menggunakan clausa group by, having dan Compute byd. Buatlah minimal ada 5 trigger e. Kasusnya menggunakan angka 401886 :0. Perpustakaan1. Rumah Sakit2. Pajak Kendaraan3. Rental Kendaraan Bermotor (Sepeda Motor/Mobil)4. Penjualan barang (elektronik)5. Hotel/Penginapan6. Koperasi (Simpan/Pinjam)7. Pegadaian8. Pemesanan Tiket9. Apotik</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-jelaskan-pentingnya-keterkaitan-antar-komponen-dari-sistem-basis-data2-sebutkan-sekurang-kurangnya-10-jenis-perangkat-lunak-yang-tergolong-dbms3-apa-yang-dimaksud-dengan-bit-byte-field-record">32.
+                                            1. Jelaskan pentingnya keterkaitan antar komponen dari Sistem Basis Data2. Sebutkan sekurang-kurangnya 10 jenis perangkat lunak yang tergolong DBMS!3. Apa yang dimaksud dengan bit, byte, field, record, file, basis data, dan sistem basisdata? 4. Berikan contoh untuk bahasa basis data DDL dan DML!mhon di bantu yah kakak²​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#10-jelaskan-tentang-query-interface-dan-query-engine-pada-search-engine%e2%80%8b">33.
+                                            10. Jelaskan tentang Query Interface dan Query Engine pada search engine​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-query-dalam-pengolah-basis-data">34.
+                                            Jelaskan query dalam pengolah basis data?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#membedakan-apa-yang-dimaksud-dengan-tabel-query-form-dan-laporan">35.
+                                            membedakan apa yang dimaksud dengan tabel, query, form dan laporan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#3-jelaskan-apa-yang-dimaksud-dengan-simple-query">36.
+                                            3. jelaskan Apa yang dimaksud dengan simple Query!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-apa-yang-dimaksud-dengan-query">37.
+                                            jelaskan apa yang dimaksud dengan Query !</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#carilah-info-tentang-data-control-language-dcl-kemudian-jelaskan-perbedaannya-dengan-ddl-dan-dml">38.
+                                            Carilah info tentang data control language (DCL) , kemudian jelaskan perbedaannya dengan DDL dan DML?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#kenapa-subquery-dapat-memperlambat-execution-time-dari-sebuah-query-dan-jelaskan-apa-saja-alternatif-lain-dari-subquery-%e2%80%8b">39.
+                                            kenapa subquery dapat memperlambat execution time dari sebuah query ?dan jelaskan apa saja alternatif lain dari subquery  ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#query-apa-saja-yang-dimiliki-ddl">40.
+                                            Query apa saja yang dimiliki DDL</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="jelaskan-perbedaan-ddl-dan-dml">
+                            1. Jelaskan perbedaan ddl dan dml</h2><br />
+                        DDL (Data Definition Language) : Perintah yang dapat digunakan untuk membuat/ menghapus/ mengubah sebuah object database, seperti database, table, index dll<br /><br />DML (Data Manipulation Language) Perintah yang dapat digunakan untuk memodifikasi isi dari database<br /><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-perbedaan-antara-ddl-dan-dml-%e2%80%8b">
+                            2. jelaskan perbedaan Antara ddl Dan dml ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Perbedaan utama antara DDL dan DML adalah bahwa DDL digunakan untuk mengubah struktur database sementara DML digunakan untuk mengelola data dalam database.</p><p><strong>Jawaban:</strong></p><p>DDL(Data Definition Language) :perintah yang dapat digunakan untuk membuat/ menghapus/mengubah object datebase, seperti database, table, indeks, dll. </p><p></p><p>DML(Data Manipulation Language) :Perintah yang dapat digunakan untuk memodifikasi isi dari data base. </p><p><strong>Penjelasan:</strong></p><p>semoga bermanfaat</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-query-yang-termasuk-dalam-ddl">
+                            3. jelaskan query yang termasuk dalam DDL</h2><br />
+                        <p>DDL adalah kependekan dari Data Definition Language. Query yang termasuk dalam DDL adalah perintah - perintah yang berhubungan dengan skema struktur sebuah database.</p><p><strong>Pembahasan
+</strong></p><p>Beberapa contoh query yang termasuk pada Data Definition Language beserta penjelasannya antara lain sebagai berikut : </p><p><strong>Create</strong></p><p>perintah yang digunakan untuk membuat database dan juga isi di dalamnya seperti tabel atau view. Syntax atau format penulisan query create adalah sebagai berikut</p>CREATE DATABASE nama_database;
+CREATE TABLE nama_tabel  (nama_kolom1, type_kolom1,  nama_kolom2, type_kolom2,…);<p><strong>Alter</strong></p><p>perintah yang digunakan untuk melakukan perubahan pada tabel yang telah dibuat. Perubahan tersebut seperti menambah kolom, mengubah kolom, menghapus kolom, atau menambahkan primary dan foreign key. Format penulisan query tersebut adalah seperti berikut</p>ALTER TABLE nama_tabel  ADD nama_kolom tipe_data;ALTER TABLE nama_tabelDROP COLUMN nama_kolom;ALTER TABLE nama_tabel MODIFY COLUMN nama_kolom tipe_dataALTER TABLE nama_tabel  ADD PRIMARY KEY (nama_kolom);\<p><strong>Drop</strong></p><p>perintah yang digunakan untuk menghapus objek yang ada di dalam database seperti database, tabel, atau kolom. Contoh penggunaan perintah ini adalah </p>DROP DATABASE nama_database;DROP TABLE nama_table;<p><strong>Truncate</strong></p><p>perintah yang digunakan untuk mengosongkan atau menghapus semua records atau data yang ada pada sebuah tabel. Contoh penulisan perintah tersebut adalah sebagai berikut</p><p>TRUNCATE TABLE nama_tabel;
+</p><p>
+</p><p><strong>Detail jawaban
+</strong></p><p>Kelas:  11</p><p>
+Mapel:  TIK</p><p>
+Bab:  Mengelola Basis Data</p><p>Kode:  11.11.10</p><p>
+</p><p><strong>Kata Kunci:</strong>  database, query, DDL</p><br /><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-langkah-langkah-membuat-query">
+                            4. jelaskan langkah langkah membuat query</h2><br />
+                        bisa rangkum dan salin materi yang ada di sini :)<br />semoga bisa membantu<br />http://mahir-msoffice.blogspot.co.id/2015/07/cara-membuat-query-dalam-microsoft.html<br />
+                                            <h2 class="ez-toc-section" id="apa-yang-di-maksud-degan-query-mysql-biasa">
+                            5. apa yang di maksud degan query mysql biasa</h2><br />
+                        untuk penulisan huruf kecil yang bergaris bawah<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-perbedaan-fungsi-perintah-query-drop-dan-delete">
+                            6. Jelaskan perbedaan fungsi perintah query drop dan delete !</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>DROP adalah perintah dalam SQL untuk menghapus basis data atau objek lain (seperti tabel) dari RDBMS</p><p>Sementara DELETE adalah perintah dalam SQL untuk menghapus baris dari tabel dalam basis data RDBMS</p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-pengertian-dari-execute-query">
+                            7. Jelaskan pengertian dari execute query</h2><br />
+                        Adalah metode dalam bahasa pemrograman java yang biasa digunakan untuk mengekskusi semua pernyataan SQL yang mengembalikan suatu objek resultset. ResultSet executeQuery(StringQuery) : menghasilkan ResultSet yang biasanya berupa object. Biasa dipergunakan untuk mendapatkan hasil, misal query select<br />
+                                            <h2 class="ez-toc-section" id="apa-yang-dimaksud-query-pada-database">
+                            8. apa yang dimaksud query pada database?</h2><br />
+                        Script atau sintak-sintak dalam kegiatan membuat database<br />Contoh : Membuat database querynya adalah :<br />Create database<br />membuat tabel querynya adalah <br />Create table &lt;nama tabel&gt;<br />&lt;field 1&gt;<br />&lt;field 2&gt;<br />...query adalah semacam kemampuan untuk menampilkan suatu data dari database dimana 
+mengambil dari table-tabel yang ada di database, namun tabel tersebut 
+tidak semua ditampilkan sesuai dengan yang kita inginkan. data apa yang 
+ingin kita tampilkan.<br /><br />
+                                            <h2 class="ez-toc-section" id="urutan-yang-tepat-untuk-membuat-sebuah-database-adalah-a-tabel-form-report-queryb-form-tabel-query-reportc-tabel-query-form-reportd-reprot-query-form-tabel%e2%80%8b">
+                            9. Urutan yang tepat untuk membuat sebuah database adalah...a. Tabel, form, report, queryb. Form, tabel, query, reportc. Tabel, query, form, reportd. Reprot, query, form, tabel​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>c. Tabel, query, form, report</p><p><strong>Penjelasan:</strong></p><p>Tabel terdiri dari field-field yg dibutuhkan, baik field umum maupun field yg menjadi kunci primer (primary key).</p><p>Query yaitu relasi antar tabel. Form yaitu salah 1 bentuk tabel yg memiliki antarmuka (interface) menarik pada saat akan melakukan input data.</p><p>Report yaitu hasil akhir berupa laporan yg nantinya siap dicetak.</p><br />
+                                            <h2 class="ez-toc-section" id="berikan-contoh-untuk-basis-data-ddl-dan-dml">
+                            10. Berikan contoh untuk basis data DDL dan DML!</h2><br />
+                        <strong>[jawaban]<br /></strong><strong><br />Mata Pelajaran: Teknologi Informasi<br /></strong><strong>Kata kunci: DDL, DML<br /></strong><strong><br />• Jawaban pendek:<br /><br /></strong>Berikan contoh untuk basis data DDL dan DML!<br /><br /><strong>DDL:<br /><br /></strong><strong>1. </strong><strong>CREATE</strong><br /><strong>Perintah ini digunakan untuk membuat, termasuk di antaranya membuat database baru, tabel baru, view baru, dan kolom.</strong><br /><strong>Contoh : </strong><strong>create table mahasiswa (nim  char(8) primary key,nama_mahasiswa  varchar(20),nilai integer(3),alamat  varchar(25);</strong><br /><strong>2. </strong><strong>ALTER</strong><br /><strong>Perintah ini digunakan untuk mengubah struktur tabel yang telah dibuat. Pekerjaannya mencakup mengganti nama tabel, menambah kolom, mengubah kolom, menghapus kolom, maupun memberikan atribut pada kolom.</strong><br /><strong>Contoh : </strong><strong>alter table mahasiswa rename wisudawan;</strong><strong><br />3. </strong><strong>DROP </strong><br /><strong>Perintah ini digunakan untuk menghapus database dan tabel.</strong><br /><strong>Contoh : </strong><strong>Alter table ‘mahasiswa’ drop ‘alamat’;</strong><strong><br /><br />DML:<br /><br />1. </strong><strong>INSERT</strong><br /><strong>Perintah ini digunakan untuk menyisipkan atau memasukkan data baru ke dalam tabel. Penggunaannya setelah database dan tabel selesai dibuat.</strong><strong>Contoh : </strong><strong>Insert into mahasiswa values (“08052926”, “Frenky”,”70”);</strong><br /><br /><strong>2. </strong><strong>SELECT</strong><br /><strong>Perintah ini digunakan untuk mengambil data atau menampilkan data dari satu tabel atau beberapa tabel dalam relasi. Data yang diambil dapat kita tampilkan dalam layar prompt MySQL secara langsung maupun ditampilkan pada tampilan aplikasi.</strong><strong>Contoh : </strong><strong>Select nama_mahasiswa from mahasiswa where nilai = 70;</strong><br /><br /><strong>3. </strong><strong>UPDATE</strong><strong> </strong><br /><strong>Perintah ini digunakan untuk memperbarui data lama menjadi data terkini. Jika Anda memiliki data yang salah atau kurang up to date dengan kondisi sekarang, maka dapat diubah isi datanya menggunakan perintah UPDATE.</strong><strong>Contoh </strong><strong>: </strong><strong>mahasiswa set nim = ‘08052926’ = 08052927;</strong><br /><br /><strong>4. </strong><strong>DELETE</strong><br /><strong>Perintah ini digunakan untuk menghapus data dari tabel. Biasanya data yang dihapus merupakan data yang sudah tidak diperlukan lagi. Pada saat menghapus data, perintah yang telah dijalankan tidak dapat digagalkan, sehingga data yang telah hilang tidak dapat dikembalikan lagi</strong><strong>Contoh : delete form mahasiswa;</strong><br /><strong><br />• Penjelasan: <br /><br />DDL<br /></strong>Data Definition Language (DDL) merupakan sub bahasa SQL yang digunakan untuk membangun kerangka database.  Atau juga merupakan kelompok perintah yang berfungsi untuk mendefinisikan atribut-atribut database, table, atribut kolom, batasan-batasan terhadap suatu atribut serta hubungan antar table.<br /><strong>DML<br /></strong>Data Manipulation Language (DML) merupakan sub bahasa SQL yang digunakan untuk memanipulasi data dalam database yang telah terbuat.1.	DDL (Data Definition Language)<br />Data Definition Language (DDL) merupakan sub bahasa SQL yang digunakan untuk membangun kerangka database.  Atau juga merupakan kelompok perintah yang berfungsi untuk mendefinisikan atribut-atribut database, table, atribut kolom, batasan-batasan terhadap suatu atribut serta hubungan antar table.Yang termasuk kelompok DDL ini adalah :CREATE : Perintah ini digunakan untuk membuat, termasuk di antaranya membuat database baru, tabel baru, view baru, dan kolom.<br />Contoh :&gt; create table mahasiswa (nim  char(8) primary key,nama_mahasiswa  varchar(20),nilai integer(3),alamat  varchar(25);ALTER : Perintah ini digunakan untuk mengubah struktur tabel yang telah dibuat. Pekerjaannya mencakup mengganti nama tabel, menambah kolom, mengubah kolom, menghapus kolom, maupun memberikan atribut pada kolom.<br />Contoh :&gt;alter table mahasiswa rename wisudawan;<br />DROP : Perintah ini digunakan untuk menghapus database dan tabel.<br />Contoh :&gt;Alter table ‘mahasiswa’ drop ‘alamat’;<br />2.	DML (Data Manipulation Language )Data Manipulation Language (DML) merupakan sub bahasa SQL yang digunakan untuk memanipulasi data dalam database yang telah terbuat.<br />Perintah yang digunakan, di antaranya<br />•	INSERT : Perintah ini digunakan untuk menyisipkan atau memasukkan data baru ke dalam tabel. Penggunaannya setelah database dan tabel selesai dibuat.Contoh :Insert into mahasiswa values (“08052926”, “Frenky”,”70”);<br />•	SELECT : Perintah ini digunakan untuk mengambil data atau menampilkan data dari satu tabel atau beberapa tabel dalam relasi. Data yang diambil dapat kita tampilkan dalam layar prompt MySQL secara langsung maupun ditampilkan pada tampilan aplikasi.Contoh :Select nama_mahasiswa from mahasiswa where nilai = 70;<br />•	UPDATE : Perintah ini digunakan untuk memperbarui data lama menjadi data terkini. Jika Anda memiliki data yang salah atau kurang up to date dengan kondisi sekarang, maka dapat diubah isi datanya menggunakan perintah UPDATE.Contoh:		&gt;mahasiswa set nim = ‘08052926’ = 08052927;•	DELETE : Perintah ini digunakan untuk menghapus data dari tabel. Biasanya data yang dihapus merupakan data yang sudah tidak diperlukan lagi. Pada saat menghapus data, perintah yang telah dijalankan tidak dapat digagalkan, sehingga data yang telah hilang tidak dapat dikembalikan lagiContoh :&gt;delete form mahasiswa;3.	Data Control Language (DCL)Data Control Language (DCL) merupakan sub bahasa SQL yang digunakan untuk melakukan pengontrolan data dan server databasenya.Perintah DCL, di antaranya:•	GRANT : Perintah ini digunakan untuk memberikan hak/ijin akses oleh administrator (pemilik utama) server kepada user (pengguna biasa). Hak akses tersebut berupa hak membuat (CREATE), mengambil (SELECT), menghapus (DELETE), mengubah (UPDATE), dan hak khusus berkenaan dengan sistem databasenya.<br />•	REVOKE : Perintah ini memiliki kegunaan terbalik dengan GRAND, yaitu untuk menghilangkan atau mencabut hak akses yang telah diberikan kepada user oleh administrator.<br />
+                                            <h2 class="ez-toc-section" id="2-jelaskan-apa-yang-dimaksud-dengan-search-query">
+                            11. 2. Jelaskan apa yang dimaksud dengan search query! </h2><br />
+                         search query is a query that a user enters into a web search engine to satisfy his or her information needsquery adalah sebuah kemampuan untuk mengolah dan menampilkan data-data dari database,. Jadi search query menurut saya adalah kemampuan untuk menampilkan hasil-hasil pencarian dari data-data yang terdapat dalam database<br />semoga membantu<br />
+                                            <h2 class="ez-toc-section" id="doa-sebelum-belajar-dml-bhs-inggris">
+                            12. Doa sebelum belajar dml bhs Inggris</h2><br />
+                        <p>before we study let's pray together, pray begin ...</p><br />
+                                            <h2 class="ez-toc-section" id="berikut-ini-untuk-membuat-query-padams-access-kita-gunakan-fitur-%e2%80%a6-a-query-wizard-b-make-query-c-query-design-d-d-dan-e-benar-e-query-access">
+                            13. Berikut ini untuk membuat query padaMs. Access, kita gunakan fitur …  
+a. Query Wizard 
+b. Make Query 
+c. Query Design 
+d. D dan E benar 
+e. Query Access</h2><br />
+                        B.Make query <br />semoga membantuC. Query Design<br /><br />Fitur untukmembuat query yaitu query design<br /><br /><br /><br />
+                                            <h2 class="ez-toc-section" id="apa-itu-ddl-dml-dcl-dalam-basisdata-dan-jelaskan-mengenai-isinya">
+                            14. Apa itu DDL, DML, DCL dalam Basisdata dan jelaskan mengenai isinya?</h2><br />
+                        Data Definition Language (DDL)<br /><br />DDL adalah sub perintah dari bahasa SQL yang digunakan untuk membangun kerangka sebuah database, dalam hal ini database dan table. Terdapat tiga perintah penting dalam DDL, yaitu CREATE, ALTER, DROP.<br /><br />CREATE: perintah ini digunakan untuk membuat, termasuk di dalamnya membuat database baru, tabel baru view baru, dan kolom baru.<br />Contoh: CREATE DATABASE nama_database<br /><br />ALTER: perintah ALTER berfungsi untuk mengubah struktur tabel yang telah dibuat. Mencakup di dalamnya mengubah nama tabel, menambah kolom, mengubah kolom, menghapus kolom, dan memberikan atribut pada kolom.<br />Contoh: ALTER TABLE nama_tabel ADD nama_kolom datatype<br /><br />DROP: perintah DROP berfungsi untuk menghapus database atau tabel.<br />Contoh: DROP DATABASE nama_database<br /><br />Data Manipulation Language (DML)<br /><br />DML adalah sub perintah dari bahasa SQL yang digunakan untuk memanipulasi data dalam database yang telah dibuat. Terdapat empat perintah penting dalam DML, yaitu INSERT, SELECT, UPDATE, dan DELETE.<br /><br />INSERT: perintah ini digunakan untuk memasukkan data baru ke dalam sebuah tabel. Perintah ini tentu saja bisa dijalankan ketika database dan tabel sudah dibuat.<br />Contoh: INSERT INTO nama_tabel VALUES (data1, data2, dst…);<br /><br />SELECT: perintah ini digunakan untuk mengambil dan menampilkan data dari tabel atau bahkan dari beberapa tabel dengan penggunaan relasi.<br />Contoh: SELECT nama_kolom1, nama_kolom2 FROM nama_tabel;<br /><br />UPDATE: perintah update digunakan untuk memperbaharui data pada sebuah tabel.<br />Contoh: UPDATE nama_tabel SET kolom1=data1, kolom2=data2,… WHERE kolom=data;<br /><br />DELETE: perintah delete digunakan untuk menghapus data dari sebuah tabel.<br />Contoh: DELETE FROM nama_tabel WHERE kolom=data;<br /><br />Data Control Language (DCL)<br /><br />DCL adalah sub bahasa SQL yang berfungsi untuk melakukan pengontrolan data dan server databasenya, seperti manipulasi user dan hak akses (priviledges). Yang termasuk perintah dalam DCL ada dua, yaitu GRANT dan REVOKE.<br /><br />GRANT: perintah ini digunakan untuk memberikan hak akses oleh admin ke salah satu user atau pengguna. Hak akses tersebut bisa berupa hak membuat (CREATE), mengambil data (SELECT), menghapus data (DELETE), mengubah data (UPDATE), dan hak khusus lainnya yang berhubungan dengan sistem database.<br /><br />REVOKE: perintah ini digunakan untuk mencabut hak akses yang telah diberikan kepada user. Dalam ini merupakan kebalikan dari perintah GRANT.<br /><br /><br /><br />Semoga membantu<br /><br /><br />Maaf jika saya salah<br />
+                                            <h2 class="ez-toc-section" id="apa-kepanjangan-dari-ddl%e2%80%8b">
+                            15. Apa kepanjangan dari DDL​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>data definition language</p><p>Jawaban:</p><p>Data Definition Language</p><p>Penjelasan:</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-perbedaan-antara-dcl-ddl-dan-dml-serta-berikan-contohnnya">
+                            16. Jelaskan Perbedaan antara DCL, DDL, dan DML serta berikan contohnnya</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Perbedaan utama antara DDL dan DML adalah bahwa DDL membantu mengubah struktur database sementara DML membantu mengelola data dalam database.</p><p></p><p></p><p>Maaf jk ada kesalahan ya kak</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="pada-sistem-basis-data-bank-setiap-pembukaan-akun-baru-akan-menambahkan-data-baru-ke-basis-data-bank-dalam-sql-yang-digunakan-untuk-menambah-data-baru-tersebut-adalah%e2%80%a6-a-dclb-ddlc-dml">
+                            17. Pada sistem basis data Bank, setiap pembukaan akun baru akan menambahkan data baru ke basis data bank. Dalam SQL yang digunakan untuk menambah data baru tersebut adalah….
+a. DCL
+b. DDL
+c. DML
+d. TCL
+e. DBA</h2><br />
+                        <p>Jawabannya <strong>C. DML</strong> (Data Manipulation Language). DML adalah bahasa yang digunakan untuk mengakses dan memanipulasi data dalam basis data. Ini termasuk perintah seperti INSERT, UPDATE, dan DELETE yang digunakan untuk menambahkan, memperbarui, dan menghapus data dari basis data.</p><br />
+                                            <h2 class="ez-toc-section" id="perbedaan-ddldmldcltcl">
+                            18. perbedaan ddl,dml,dcl,tcl</h2><br />
+                        <p>Adapun <strong>perbedaan dari DDL, DML, DCL, dan TCL itu terletak pada pengertian dari masing sejenis nya sendiri, </strong>Yang mana dapat kita jelaskan sebagai berikut:</p>Data Definition Language atau sering di singkat juga dengan DDL dapat kita artikan bahwa DDL dapat digunakan supaya dapat mengubah dan juga memodifikasi suatu struktur database dan juga sebuah tabel dan skema. sehingga dari hal tersebut dapat mengatasi permasalahan di bidang desain dan juga penyimpanan objek database.Bahasa Manipulasi Data  atau sering di singkat juga dengan DML dapat kita artikan sebagai suatu ajuan untuk sebuah perintah yang terdapat di dalam suatu bahasa pemrograman SQL yang mana hal tersebut digunakan untuk dapat memanipulasi data dalam sebuah database.Data Control Language atau sering di singkat juga dengan DCL dapat kita artikan sebagai suatu ajuan untuk sebuah perintah yang terdapat di dalam suatu bahasa pemrograman SQL yang mana hal tersebut digunakan untuk dapat merubah hak akses, memberikan sebuah roles, dan juga mengenai sebuah isu lain yang berhubungan dengan keamanan database sehingga hal tersebut dapat berguna untuk pengontrolam dan memanipulasi dari hak akses database itu sendiri.Transaction Control Language atau sering di singkat juga dengan TCL ialah Perintah TCL berurusan dengan transaksi dalam database. Melakukan sebuah query untuk transaksi dalam sebuah logika database.<p>  </p>Pembahasan<p>Berikut ini <strong>beberapa keuntungan dari penggunaan sistem database, </strong>yang mana di antaranya ialah:</p>Dapat memudahkan kita dalam mengakses informasi atau speed.Adanya kontrol data yang terpusat.Adanya ruang penyimpanan yang efisien.Adanya keakuratan yang lebih.Adanya ketersediaan atau yang disebut dengan availability.Adanya keamanan atau yang disebut dengan security.Adanya kebebasan data.<p></p>Pelajari lebih lanjut  materi tentang Keuntungan dan kerugian dari data base https://brainly.co.id/tugas/25276313materi tentang komputer brainly.co.id/tugas/24900052materi tentang sistem komputer https://brainly.co.id/tugas/6739977<p></p>Detail jawaban<p>Kelas: SMP</p><p>Mapel: TI</p><p>Bab: Bab 5 - Mengoperasikan Komputer dengan Prosedur yang Benar</p><p>Kode: 7.11.5</p><p><strong>#AyoBelajar</strong></p><p><strong>#SPJ2</strong></p><br />
+                                            <h2 class="ez-toc-section" id="command-query-yang-digunakan-untuk-menemukan-apakah-data-yang-dicari-berada-di-dalam-query">
+                            19. Command query yang digunakan untuk menemukan apakah data yang dicari berada di dalam query</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p>Select * from Tabel where Kolom IN (select Kolom from Tabel)</p><p></p><p><strong>Penjelasan:</strong></p><p><strong>In Select</strong> dipakai mencari kriteria dalam query</p><br />
+                                            <h2 class="ez-toc-section" id="mengambil-data-dari-satu-atau-banyak-tabel-hasilnya-akan-dijadikan-sebuah-tabel-baru-adalah-fungsi-dari-a-query-parameterb-make-table-queryc-queryd-query-perhitungan%e2%80%8b">
+                            20. Mengambil data dari satu atau banyak tabel, hasilnya akan dijadikan sebuah tabel baru adalah fungsi dari ...a. query parameterb. make table queryc. queryd. query perhitungan​</h2><br />
+                        <p><strong>Jawaban</strong><strong>:</strong><strong>B</strong><strong>.</strong><strong>Make</strong><strong> </strong><strong>table</strong><strong> </strong><strong>query</strong></p><p></p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-yg-anda-ketahui-tentang-query-interface">
+                            21. Jelaskan yg anda ketahui tentang query interface</h2><br />
+                        query interface merupakan suatu database dalam melalui antar muka<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-perbedaan-ddl-language-dan-dml-language">
+                            22. jelaskan perbedaan DDL language dan DML language</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>adalah bahwa DDL digunakan untuk mengubah struktur database dan DML digunakan untuk mengelola data dalam database</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-update-data-dengan-menggunakan-datasheet-dan-query">
+                            23. jelaskan update data dengan menggunakan datasheet dan query</h2><br />
+                        Update data melalui query<br /><br />a. Membuat query<br /><br /><br />    Sebelum memulai kegiatn ini,sebaiknya kamu tahu terlebih dahulu pengertian dari query.query bisa    diartikan sebagai pernyataan atu permintaan untuk memproses tabel yang ada.untuk mengupdate data melalui query,kamu harus memiliki query terlebih dahulu.namun jika kamu belum memiliki query,maka kamu harus membuatnya terlebih dahulu.terdapat dua cara membuat query<br /><br />yaitu:   1.      Create query in design view<br /><br />           2.      Create query by using wizard<br /><br /><br />Kita gunakan metode create query by using wizard.berikut adalah langkah-langkahnya. Pada jendela objects pilih queries,kemudian klik ganda pada create query by using wizard. Pilih nama pada tabel daftar.jika ingin ditampilkan seluruh field dalam query yang kamu buat,klik tombol &gt;&gt; namun jika hanya ingin dipilih beberapa field saja,klik tombol  &gt; sekarang pilih seluruh field dan klik next selanjutnya,dalam pilihan yang diberikan,pilihlah detail dan klik next. Selanjtnya,kamu akan diberi pilihan untuk memberi nama query yang kamu buat.secara otomatis,ms access memberi nama sesuai nama tabel yang dirujuk,yaitu daftar query kemudian klik finish.<br /><br /><br />Kita dapat memilih untuk menampilkan field tertentu setelah query dibuat.bagaimana caranya?lakukanlah langkah-langkah berikut :<br /><br />=&gt; simpan hasil query yang kamu buat dan tutup query<br /><br />=&gt; klik kanan daftar query dan pilih design view<br /><br />=&gt; selanjutnya kamu akan mendapatkan jendela design view<br /><br />=&gt; jika kamu hanya ingin menampilkan field nama siswa,prog.pilihan,math,bhs inggris,maka berikan tanda   <br /><br />     checklist pada bagian show hanya pada field ini saja<br /><br />=&gt; simpan dengan nama daftar query baru.selanjutnya,buka daftar query baru.<br /><br /><br />Bagaimana menampilkan jumlah nilai dan nilai rata-rata pada query?perhatikan langkah-langkah berikut :<br /><br /><br />buka query daftar query.pada kolom jumlah nilai,ketikkan rumus berikut:<br /><br /><br />Jumlah nilai:[ppkn]+[bhs indo]+[math]+[bhs inggris]+[nilai ipa]+[nilai ips]<br /><br /><br />Simpan hasil perubahan yang kamu buat di design view<br /><br /><br />selanjutnya,kamu dapat melihat query daftar query telah menunjukkan jumlah nilai siswa.<br /><br /><br />jika kamu menginginkan   juga nilai rata-rata ikut diperlihatkan dalam query.beri tanda checklist pada kolom nilai rata-rata di design view,kemudian ketikkan persamaan berikut:<br /><br /><br />Nilai rata-rata: [jumlah nilai]/6<br /><br /><br />simpan perubahan yang kamu lakukan dan keluarlah dari design view.selanjutnya buka kembali daftar query<br /><br /><br />kamu dapat mengubah jumlah desimal dengan mengklik kanan kolom.nilai rata-rata pada jendela design view,kemudian klik properties<br /><br />ubah format pada filed properties menjadi  standard<br /><br />simpan hasil perubahan query dengan menekan ctrl+s dan buka daftar query.<br /><br />                            <br /><br />b.Update data melalui query<br /><br />Sebelumnya kamu telah mempelajari bagaimana mengubah data melalui tabel dan form.selanjutnya,kamu akan mempelajari bagaimana mengubah data melalui query.untuk itu,lakukan langkah-langkah sebagai berikut:<br /><br /><br />buka basis data data akademik,kemudian masuklah daftar query <br /><br />pada record terakhir,masukkan data-data tersebut dengan tepat<br /><br />simpan hasil perubahan yang telah dilakukan dan juga dapat dilihat pada tabel &amp; form<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="apa-yang-dimaksud-dengan-query">
+                            24. apa yang dimaksud dengan query?</h2><br />
+                        <p><strong>Query</strong> adalah suatu bentuk pemanggilan data yang ada pada database. Pemanggilan data menggunakan query harus memenuhi format dan aturan yang sesuai dengan ketentuan Structure Query Language/SQL agar database dapat membaca pemanggilan secara tepat. Penggunaan query dapat digunakan untuk melakukan menambahkan data, mengupdate data dan melakukan penghapusan data.</p><p></p>Pembahasan<p>Query merupakan suatu hal yang identik dengan database karena keduanya memiliki hubungan. Tanpa query, data yang tersimpan dalam database tidak dapat dilakukan manipulasi terhadap isi didalamnya karena diibaratkan pengguna melakukan requesting terhadap database untuk melakukan tindakan terhadap data didalamnya. Contoh query adalah penggunaan SQL statement seperti SELECT [column, ...] FROM [table name]. Untuk mengakses data dalam database, ada cara lain selain menggunakan query, namun, query tetap dianggap solusi paling efektif dalam melakukan pemanggilan data di database.</p><p></p>Pelajari lebih lanjut<p>1. Perbedaan HAVING dan WHERE dalam SQL</p><p>https://brainly.co.id/tugas/2705635</p><p>2. Pengertian database</p><p>https://brainly.co.id/tugas/2272006</p><p>3. Perbedaan SQL dan MySQL</p><p>https://brainly.co.id/tugas/15701050</p><p></p>Detil jawaban<p>Mata pelajaran: TI</p><p>Materi: Bab 10 - Mengelola Basis Data</p><p>Kelas: 11 SMA</p><p>Kode kategorisasi: 11.11.10</p><p></p><p>#TingkatkanPrestasimu</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-query-interface">
+                            25. jelaskan query interface</h2><br />
+                        <p>mekanisme dalam microsoft's Component Object Model untuk menentukan komponen yang dikenal mendukung suatu interface (antarmuka) tertentu.</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-bagaimana-pengaksesan-query-dari-client-ke-server-dan-hasil-query-dari-server-ke-client">
+                            26. Jelaskan bagaimana pengaksesan query dari client ke server dan hasil query dari server ke client </h2><br />
+                        <p><strong>Jawaban:</strong></p><p>dengan menggunakan bahasa SQL ( structured query Language) yang dikirim oleh client untuk diproses oleh server, selanjutnya server mengirim ke client yang memintanya result dari sql tersebut dalam bentuk data</p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-query-interface-dan-berikan-contohnya">
+                            27. Jelaskan query interface dan berikan contohnya</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Query interface adalah fitur yang dirancang guna melakukan fungsinya sebagai mesin pencari sederhana, atau bahkan kompleks, yang bertujuan untuk menampilkan konteks dari kueri yang dicari.</p><p><strong>Contoh:</strong></p><p>Google Search, Bing, Yahoo, dan sebagainya.</p><br />
+                                            <h2 class="ez-toc-section" id="jika-anda-ingin-menambah-record-gunakan-a-update-queryb-append-queryc-delete-queryd-recorde-cancel">
+                            28. Jika anda ingin menambah record gunakan..
+A. Update query
+B. Append query
+C. Delete query
+D. Record
+E. Cancel</h2><br />
+                        B. Append query<br /><br />Dalam Bahasa Inggris, "append" berarti "menambahkan"<br /><br />Maaf kalau salah^^<br />Jadikan terbaik ya, thanks<br />
+                                            <h2 class="ez-toc-section" id="sebutkan-dan-jelaskan-minimal-2-perintah-dari-ddl">
+                            29. Sebutkan dan Jelaskan minimal 2 perintah dari ddl</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>1) ALTER</strong></p><p>Alter digunakan untuk mengubah struktur dari tabel meliputi mengganti nama tabel, menambah kolom, mengubah kolom, menghapus dan memberikan atribut pada kolom.</p><p>Contoh perintah menambahkan kolom <strong>tanggal_lahir</strong> dengan type data <strong>date</strong> atau <strong>tanggal</strong> pada table <strong>mahasiswa</strong> :</p><p><strong>ALTER TABLE</strong> siswa <strong>ADD</strong> tanggal_lahir <strong>date</strong>; </p><p></p><p><strong>2) DROP</strong></p><p>Drop digunakan untuk membuang atau menghapus table dan database.</p><p>Contoh menghapus database :</p><p><strong>DROP DATABASE</strong> sekolah123;</p><p></p><p>Menghapus Table :</p><p><strong>DROP TABLE</strong> siswa;</p><p></p><p><strong>3) CRATE</strong></p><p>Create digunakan untuk membuat database dan table.</p><p>Contoh membuat database :</p><p><strong>CREATE DATABASE</strong> warkopasik;</p><p></p><p>Membuat Table :</p><p><strong>CREATE TABLE</strong> ( id_kopi <strong>int</strong>, nama_kopi <strong>varchar</strong>(200), harga_kopi <strong>int</strong> );</p><p></p><p>Jika ada yang kurang dimengerti, silahkan tulis di kolom komentar....</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-apa-itu-web-dan-log-domain-hosting-ddl">
+                            30. Jelaskan apa itu web dan log, domain-hosting, DDL</h2><br />
+                        web = kumpulan halaman yang menampilkan informasi data teks, data gambar diam atau gerak, data animasi, suara, video<br />domain = nama situs anda yang unik di dunia internet. Unik disini berarti nama situs anda hanya andalah pemiliknya di internet.<br />hosting = suatu space atau tempat di internet yang kita gunakan untuk menyimpan data-data situs<br />DDL = kumpulan perintah SQL yang digunakan untuk membuat, mengubah dan menghapus struktur dan definisi metadata dari objek-objek databasejawaban sebelah sudah benar<br /><br />
+                                            <h2 class="ez-toc-section" id="buatlah-database-sesuai-kasus-dengan-menggunakan-sql-pada-sql-server-ddl-dan-dml-lakukan-hal-%e2%80%93-hal-sebagai-berikut-a-untuk-dml-insert-minimal-20-record-update-dan-delete-minimal-ada-10-qu">
+                            31. Buatlah database sesuai kasus dengan menggunakan SQL pada SQL Server, DDL dan DML. Lakukan hal – hal sebagai berikut :a. Untuk DML insert minimal 20 record; update dan delete minimal ada 10 query untuk setiap table. b. Buatlah query untuk inner join dan outer join antar table dengan minimal 2 query dan kondisi ‘where’c. Buatlah query untuk penerapan fungsi agregat menggunakan clausa group by, having dan Compute byd. Buatlah minimal ada 5 trigger e. Kasusnya menggunakan angka 401886 :0. Perpustakaan1. Rumah Sakit2. Pajak Kendaraan3. Rental Kendaraan Bermotor (Sepeda Motor/Mobil)4. Penjualan barang (elektronik)5. Hotel/Penginapan6. Koperasi (Simpan/Pinjam)7. Pegadaian8. Pemesanan Tiket9. Apotik</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>yg b. </p><p><strong>Penjelasan:</strong></p><p>maaf jika salah ya hehhhehheh</p><br />
+                                            <h2 class="ez-toc-section" id="1-jelaskan-pentingnya-keterkaitan-antar-komponen-dari-sistem-basis-data2-sebutkan-sekurang-kurangnya-10-jenis-perangkat-lunak-yang-tergolong-dbms3-apa-yang-dimaksud-dengan-bit-byte-field-record">
+                            32. 1. Jelaskan pentingnya keterkaitan antar komponen dari Sistem Basis Data2. Sebutkan sekurang-kurangnya 10 jenis perangkat lunak yang tergolong DBMS!3. Apa yang dimaksud dengan bit, byte, field, record, file, basis data, dan sistem basisdata? 4. Berikan contoh untuk bahasa basis data DDL dan DML!mhon di bantu yah kakak²​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. Keterkaitan antar komponen dari Sistem Basis Data sangat penting karena setiap komponen memiliki peran dan tanggung jawabnya masing-masing dalam memastikan basis data berjalan dengan baik. Misalnya, struktur tabel (table structure) yang terdiri dari kolom (column) dan tipe data (data type) harus diatur dengan benar agar data bisa disimpan dengan tepat dan valid. Selain itu, keterkaitan antara bahasa query (query language) dengan model data (data model) harus dijaga agar data bisa diambil dan dimanipulasi dengan benar. Jika salah satu komponen tidak berfungsi dengan benar, bisa berdampak pada kinerja dan integritas basis data secara keseluruhan.</p><p></p><p>2. Sepuluh jenis perangkat lunak yang tergolong DBMS (Database Management System) antara lain:</p><p>• Oracle Database</p><p>• Microsoft SQL Server</p><p>• MySQL</p><p>• PostgreSQL</p><p>• MongoDB</p><p>• IBM DB2</p><p>• SQLite</p><p>• Microsoft Access</p><p>• MariaDB</p><p>• Apache Cassandra</p><p></p><p>3. Berikut adalah penjelasan singkat tentang beberapa istilah dalam basis data:</p><p>• Bit: satuan terkecil dalam komputasi yang bernilai 0 atau 1.</p><p>• Byte: kumpulan 8 bit yang mewakili sebuah karakter atau simbol.</p><p>• Field: bagian terkecil dalam sebuah tabel yang menyimpan informasi tentang suatu aspek atau atribut dari entitas atau objek yang diwakilinya.</p><p>• Record: kumpulan data atau informasi dalam sebuah tabel yang mewakili satu entitas atau objek.</p><p>• File: kumpulan data yang diorganisir secara logis dan memiliki nama serta lokasi tertentu pada sistem operasi.</p><p>• Basis data (database): kumpulan data atau informasi yang disimpan dalam sistem komputer dengan tujuan untuk diakses, dimanipulasi, dan dikelola.</p><p>• Sistem basis data (database system): kumpulan perangkat lunak dan perangkat keras yang digunakan untuk mengelola dan menyimpan data dalam basis data.</p><p></p><p>4. DDL (Data Definition Language) adalah bahasa basis data yang digunakan untuk mendefinisikan struktur dan schema dalam basis data. Contoh DDL adalah:</p><p>• CREATE TABLE: membuat tabel baru dalam basis data</p><p>• ALTER TABLE: mengubah struktur tabel, misalnya menambahkan kolom atau mengubah tipe data</p><p>• DROP TABLE: menghapus tabel dari basis data</p><p></p><p>DML (Data Manipulation Language) adalah bahasa basis data yang digunakan untuk mengambil, memperbarui, dan menghapus data dalam basis data. Contoh DML adalah:</p><p>• SELECT: mengambil data dari satu atau beberapa tabel</p><p>• INSERT INTO: menambahkan data ke dalam tabel</p><p>• UPDATE: memperbarui data dalam tabel</p><p>• DELETE: menghapus data dari tabel.</p><p><strong>Penjelasan:</strong></p><p>SC : Chat Gpt, by.Open Ai</p><br />
+                                            <h2 class="ez-toc-section" id="10-jelaskan-tentang-query-interface-dan-query-engine-pada-search-engine%e2%80%8b">
+                            33. 10. Jelaskan tentang Query Interface dan Query Engine pada search engine​</h2><br />
+                        <p>Query interface adalah komponen penting pertama yang merupakan bentuk tampilan atau format situs yang menyediakan fasilitas searching engine</p><p></p><p>Search engine (mesin pencari/pelacak/penelusur) adalah salah satu program komputer yang dirancang khusus untuk membantu seseorang menemukan file-file yang disimpan dalam komputer, misalnya dalam sebuah web server umum di web (www) atau komputer sendiri</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-query-dalam-pengolah-basis-data">
+                            34. Jelaskan query dalam pengolah basis data?</h2><br />
+                        Query<br /><br />adalah semacam kemampuan untuk menampilkan suatu data dari database dimanamengambil dari table-tabel yang ada di database, namun tabel tersebut tidak semuaditampilkan sesuai dengan yang kita inginkan. <br /><br />Semoga membantu <br />
+                                            <h2 class="ez-toc-section" id="membedakan-apa-yang-dimaksud-dengan-tabel-query-form-dan-laporan">
+                            35. membedakan apa yang dimaksud dengan tabel, query, form dan laporan</h2><br />
+                        klo tabel itu : kotak kotak yang isinya tulisan atau biasanya pernyataan <br />klo laporan itu : teks  yang akan dilaporkan oleh misalnya orang lain atau orang terttentu<br />
+                                            <h2 class="ez-toc-section" id="3-jelaskan-apa-yang-dimaksud-dengan-simple-query">
+                            36. 3. jelaskan Apa yang dimaksud dengan simple Query!</h2><br />
+                        <p>simple query atau kueri sederhana</p><p></p><p>Kueri sederhana adalah kueri yang menelusuri hanya menggunakan satu parameter. Kueri sederhana mungkin menggunakan semua bidang dalam tabel dan menelusuri hanya menggunakan satu parameter. atau mungkin menggunakan hanya bidang yang diperlukan yang informasinya diperlukan, tetapi masih akan menggunakan hanya satu parameter (kriteria pencarian)</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-apa-yang-dimaksud-dengan-query">
+                            37. jelaskan apa yang dimaksud dengan Query !</h2><br />
+                        Query adalah kemampuan untuk menampilkan suatu data dari database<br /><br />
+                                            <h2 class="ez-toc-section" id="carilah-info-tentang-data-control-language-dcl-kemudian-jelaskan-perbedaannya-dengan-ddl-dan-dml">
+                            38. Carilah info tentang data control language (DCL) , kemudian jelaskan perbedaannya dengan DDL dan DML?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Apa itu DDL dan DML pada SQL? Perbedaan DDL dan DML? Sering banget kan ya keluar di soal – soal SMK maupun Kuliah TI, kali ini saya akan jelaskan secara ringkas nya dengan contohnya langsung biar kalian memahami perbedaan DDL dan DML itu apa. Ternyata selain dua itu, ada 1 lagi sob nama ny DCL? Baru tau?</p><p></p><p>DDL, DML maupun DCL itu merupakan bentuk Bahasa Basis Data.  </p><p></p><p>PENJELASAN</p><p></p><p>DDL atau Data Definition Language merupakan perintah SQL yang berhubungan dengan pendefinisian suatu struktur database. Apa saja yang menggunakan DDL :</p><p></p><p>CREATE</p><p>CREATE DATABASE</p><p>CREATE FUNCTION</p><p>CREATE INDEX</p><p>CREATE PROCEDURE</p><p>CREATE TRIGGER</p><p>CREATE VIEW</p><p>CREATE TABLE</p><p>RENAME</p><p>RENAME TABLE</p><p>ALTER</p><p>ALTER DATABASE</p><p>ALTER FUNCTION</p><p>ALTER PROCEDURE</p><p>ALTER TABLE</p><p>ALTER VIEW</p><p>DROP</p><p>DROP DATABASE</p><p>DROP FUNCTION</p><p>DROP INDEX</p><p>DROP PROCEDURE</p><p>DROP TABLE</p><p>DROP TRIGGER</p><p>DROP VIEW</p><p> </p><p></p><p>DML atau Data Manipulation Language merupakan perintah SQL yang berhubungan dengan manipulasi atau pengolahan data dalam table. Yang menggunakan DML :</p><p></p><p>SELECT</p><p>INSERT</p><p>UPDATE</p><p>DELETE</p><p>DCL atau Data Control Language, biasa digunakan untuk merubah hak akses, memberikan roles, dan isu lain yang berhubungan dengan keamanan database. Yang menggunakan DCL :</p><p></p><p>GRANT</p><p>GRANT SELECT</p><p>GRANT UPDATE</p><p>GRANT INSERT</p><p>GRANT DELETE</p><p>REVOKE</p><p>REVOKE SELECT</p><p>REVOKE DELETE</p><p>REVOKE INSERT</p><p>REVOKE UPDATE</p><p>Kalian bakal jarang banget pake ini kecuali jika kalian seorang database Administrator hehe</p><p></p><p><strong>Penjelasan:</strong></p><p>semoga membantu</p><p><strong>Pengertian </strong><strong>DCL</strong></p><p>DCL atau Data Control Language, biasa digunakan untuk merubah hak akses, memberikan roles, dan isu lain yang berhubungan dengan keamanan database.</p><p></p><p><strong>Apa kesamaan antara DDL dan DML?</strong></p>Keduanya adalah tipe Structured Query Language (SQL).<p></p><p><strong>Apa Perbedaan Antara DDL dan DML?</strong></p>Ringkasan -DDL vs DML<p>Database Relasional adalah jenis basis data yang umum. Structured Query Language (SQL) digunakan untuk melakukan operasi seperti menyimpan, memanipulasi dan mengambil data dari database relasional. SQL memiliki tiga subkategori utama. Mereka adalah DDL, DML dan DCL. Perbedaan antara DDL dan DML adalah bahwa DDL digunakan untuk mengubah struktur database dan DML digunakan untuk mengelola data dalam database.</p>Unduh Versi PDF dari DDL vs DML<p>Anda dapat mengunduh versi PDF dari artikel ini dan menggunakannya untuk tujuan offline sesuai catatan kutipan. Silakan unduh versi PDF di sini Perbedaan Antara DDL dan DML.</p><p></p><p>SEMOGA MEMBANTUUU</p><br />
+                                            <h2 class="ez-toc-section" id="kenapa-subquery-dapat-memperlambat-execution-time-dari-sebuah-query-dan-jelaskan-apa-saja-alternatif-lain-dari-subquery-%e2%80%8b">
+                            39. kenapa subquery dapat memperlambat execution time dari sebuah query ?dan jelaskan apa saja alternatif lain dari subquery  ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>karena main query baru akan dijalankan (menunggu) setelah subquery selesai di eksekusi.</p><p>alternatif subquery bisa buat stored procedure, function atau JOIN tabel (Left join, right join)</p><br />
+                                            <h2 class="ez-toc-section" id="query-apa-saja-yang-dimiliki-ddl">
+                            40. Query apa saja yang dimiliki DDL</h2><br />
+                        Create,  alter, drop<br />Maaf kalau salah<br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/k6HKfdfAywU?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>sbmptn</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/kisi-kisi-tema-9-kelas-4-semester-2.html">Kisi Kisi Tema 9 Kelas 4 Semester 2</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/kumpulan-soal-percobaan-melde.html">Kumpulan Soal Percobaan Melde</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/apa-yang-dimaksud-2d-jelaskan.html">Apa Yang Dimaksud 2d Jelaskan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/contoh-kisi-kisi-soal-ekosistem.html">Contoh Kisi kisi Soal Ekosistem</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/jendela-kisi-toilet.html">Jendela Kisi Toilet</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/kumpulan-soal-al-qur-an-kelas-1-sd-semester-1.html">Kumpulan Soal Al Qur an Kelas 1 Sd Semester 1</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/kisi-kisi-ips-smp.html">Kisi Kisi Ips Smp</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/kumpulan-soal-limit-tak-hingga-un.html">Kumpulan Soal Limit Tak Hingga Un</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/judul-skripsi-rani-wulandari-psikologi-undip.html">Judul Skripsi Rani Wulandari Psikologi Undip</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/judul-skripsi-kualitatif-tentang-kecerdasan-emosi-spiritual.html">Judul Skripsi Kualitatif Tentang Kecerdasan Emosi Spiritual</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/kisi-ac-mirage.html">Kisi Ac Mirage</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/contoh-judul-skripsi-keuangan-3-variabel.html">Contoh Judul Skripsi Keuangan 3 Variabel</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/kumpulan-soal-persamaan-dan-pertidaksamaan-nilai-mutlak.html">Kumpulan Soal Persamaan Dan Pertidaksamaan Nilai Mutlak</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/kumpulan-soal-tpa-bappenas-s2-download.html">Kumpulan Soal Tpa Bappenas S2 Download</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/kumpulan-soal-skb-dan-kunci-jawaba.html">Kumpulan Soal Skb Dan Kunci Jawaba</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/contoh-kisi-kisi-soal-microsoft.html">Contoh Kisi Kisi Soal Microsoft</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/judul-skripsi-rice-cooker-berbasis-internet.html">Judul Skripsi Rice Cooker Berbasis Internet</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/judul-skripsi-tentan-kesejahteraan.html">Judul Skripsi Tentan Kesejahteraan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/kisi-kisi-soal-pjok-kelas-6-semester-1.html">Kisi Kisi Soal Pjok Kelas 6 Semester 1</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://skripsipintar.github.io/kumpulan-soal-mtk-sd-kls-5.html">Kumpulan Soal Mtk Sd Kls 5</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://skripsipintar.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://skripsipintar.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://skripsipintar.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://skripsipintar.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://skripsipintar.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>
